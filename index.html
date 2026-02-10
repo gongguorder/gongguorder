@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <!-- [추가] 브라우저 캐시 방지 설정 -->
+    <!-- [異붽?] 釉뚮씪?곗? 罹먯떆 諛⑹? ?ㅼ젙 -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -14,12 +14,12 @@
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%234CAF20'/><text x='50' y='72' font-family='Pretendard, sans-serif' font-size='70' font-weight='900' fill='white' text-anchor='middle'>M</text></svg>">
 
-    <!-- [추가] 자동 업데이트 체크: 새 버전 배포 시 모바일에서 즉시 반영되도록 강제 새로고침 -->
+    <!-- [異붽?] ?먮룞 ?낅뜲?댄듃 泥댄겕: ??踰꾩쟾 諛고룷 ??紐⑤컮?쇱뿉??利됱떆 諛섏쁺?섎룄濡?媛뺤젣 ?덈줈怨좎묠 -->
     <script>
         (function () {
             var now = Date.now();
             var version = new URLSearchParams(window.location.search).get('v');
-            // 10분(600초) 이상 지난 'v' 파라미터가 있거나 없으면 강제 리로드 (너무 잦은 리로드 방지)
+            // 10遺?600珥? ?댁긽 吏??'v' ?뚮씪誘명꽣媛 ?덇굅???놁쑝硫?媛뺤젣 由щ줈??(?덈Т ??? 由щ줈??諛⑹?)
             if (!version || (now - parseInt(version)) > 600000) {
                 var separator = window.location.href.indexOf('?') !== -1 ? '&' : '?';
                 var newUrl = window.location.href.split('#')[0].split('?')[0] + "?v=" + now;
@@ -32,16 +32,16 @@
     <link rel="stylesheet" as="style" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <style>
-        /* [1] 원본 주문서2.html 스타일 변수 및 레이아웃 완벽 보존 */
+        /* [1] ?먮낯 二쇰Ц??.html ?ㅽ???蹂??諛??덉씠?꾩썐 ?꾨꼍 蹂댁〈 */
         :root {
-            --moket-green: #4CAF20;
+            --gonggu-green: #4CAF20;
             --white: #FFFFFF;
             --font-main: 'Pretendard', sans-serif;
             --common-radius: 0;
             --target-height: 42px;
-            /* 상세보기 버튼 높이 (기존 원복) */
+            /* ?곸꽭蹂닿린 踰꾪듉 ?믪씠 (湲곗〈 ?먮났) */
             --qty-height: 35px;
-            /* 수량 조절바 전용 높이 (새로 생성) */
+            /* ?섎웾 議곗젅諛??꾩슜 ?믪씠 (?덈줈 ?앹꽦) */
             --btn-radius: 0;
             --nego-orange: #FF6D00;
             --item-black: #1a1a1a;
@@ -54,15 +54,15 @@
             background: #f4f6f8;
             margin: 0;
             padding-bottom: calc(120px + env(safe-area-inset-bottom));
-            /* 푸터 높이 고려하여 여백 고정 (기존 150px에서 20% 축소) */
+            /* ?명꽣 ?믪씠 怨좊젮?섏뿬 ?щ갚 怨좎젙 (湲곗〈 150px?먯꽌 20% 異뺤냼) */
             letter-spacing: -0.02em;
             -webkit-font-smoothing: antialiased;
             word-break: keep-all;
         }
 
-        /* 헤더: 햄버거 메뉴를 위해 정렬만 추가 */
+        /* ?ㅻ뜑: ?꾨쾭嫄?硫붾돱瑜??꾪빐 ?뺣젹留?異붽? */
         .header {
-            background: var(--moket-green);
+            background: var(--gonggu-green);
             padding: calc(25px + env(safe-area-inset-top)) 20px 20px 20px;
             display: grid;
             grid-template-columns: 70px 1fr 70px;
@@ -104,7 +104,7 @@
             line-height: 1;
         }
 
-        /* 햄버거 메뉴 버튼 */
+        /* ?꾨쾭嫄?硫붾돱 踰꾪듉 */
         .menu-btn {
             justify-self: start;
             display: flex;
@@ -112,7 +112,7 @@
             align-items: center;
             justify-content: center;
             gap: 13px;
-            /* 영어 로고 중앙에 맞추기 위한 간격 조정 */
+            /* ?곸뼱 濡쒓퀬 以묒븰??留욎텛湲??꾪븳 媛꾧꺽 議곗젙 */
             cursor: pointer;
             z-index: 1001;
         }
@@ -139,7 +139,7 @@
             letter-spacing: -0.02em;
         }
 
-        /* 사이드 메뉴 드로어 */
+        /* ?ъ씠??硫붾돱 ?쒕줈??*/
         .side-menu {
             position: fixed;
             top: 0;
@@ -159,8 +159,8 @@
         }
 
         .side-menu-header {
-            background: var(--moket-green);
-            /* 타이틀 확대에 맞춰 상하 패딩 조정 */
+            background: var(--gonggu-green);
+            /* ??댄? ?뺣???留욎떠 ?곹븯 ?⑤뵫 議곗젙 */
             padding: calc(24.5px + env(safe-area-inset-top)) 20px 25px 20px;
             color: var(--white);
             display: flex;
@@ -174,7 +174,7 @@
 
         }
 
-        /* [추가] 스켈레톤 로딩 스타일 */
+        /* [異붽?] ?ㅼ펷?덊넠 濡쒕뵫 ?ㅽ???*/
         .skeleton {
             background: linear-gradient(90deg, #eee 25%, #f5f5f5 50%, #eee 75%);
             background-size: 200% 100%;
@@ -244,14 +244,14 @@
         #menu-greeting {
             margin: 0;
             padding: 20px 25px;
-            /* 상하좌우 여백 균등 조정 */
+            /* ?곹븯醫뚯슦 ?щ갚 洹좊벑 議곗젙 */
             font-size: 17px;
             font-weight: 800;
             letter-spacing: 1px;
             display: flex;
             align-items: center;
             justify-content: center;
-            /* 가로 중앙 정렬 추가 */
+            /* 媛濡?以묒븰 ?뺣젹 異붽? */
             color: var(--item-black);
             border-bottom: 1px solid #f5f5f5;
         }
@@ -286,15 +286,15 @@
             align-items: center;
         }
 
-        /* 공통 버튼 시스템 (닫기 버튼 통일) */
+        /* 怨듯넻 踰꾪듉 ?쒖뒪??(?リ린 踰꾪듉 ?듭씪) */
         .btn-common {
             width: 100%;
             height: 48px;
-            /* 전체 버튼 높이 통일 */
+            /* ?꾩껜 踰꾪듉 ?믪씠 ?듭씪 */
             border-radius: 0;
             font-weight: 900;
             font-size: 18px;
-            /* 전체 버튼 폰트 통일 */
+            /* ?꾩껜 踰꾪듉 ?고듃 ?듭씪 */
             border: none;
             cursor: pointer;
             display: flex;
@@ -310,7 +310,7 @@
         }
 
         .btn-primary {
-            background: var(--moket-green);
+            background: var(--gonggu-green);
             color: #fff;
         }
 
@@ -326,7 +326,7 @@
             width: 100%;
         }
 
-        /* [추가] 초기 로그인 강제 스타일 */
+        /* [異붽?] 珥덇린 濡쒓렇??媛뺤젣 ?ㅽ???*/
         #profile-modal.login-forced .input-group,
         #profile-modal.login-forced .btn-primary,
         #profile-modal.login-forced .btn-close {
@@ -346,7 +346,7 @@
             display: block;
         }
 
-        /* 모달 시스템 */
+        /* 紐⑤떖 ?쒖뒪??*/
         .modal-overlay {
             display: none;
             position: fixed;
@@ -355,7 +355,7 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.85);
-            /* 더 진하게 변경 */
+            /* ??吏꾪븯寃?蹂寃?*/
             z-index: 6000;
             justify-content: center;
             align-items: center;
@@ -374,26 +374,26 @@
             box-sizing: border-box;
         }
 
-        /* 상세보기 & 주문내역 모달 (전체화면형) */
+        /* ?곸꽭蹂닿린 & 二쇰Ц?댁뿭 紐⑤떖 (?꾩껜?붾㈃?? */
         #detail-overlay .modal-content,
         #history-modal .modal-content {
             width: 95%;
             max-width: 580px;
             height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 20px);
-            /* 상단(10px) + 하단(10px) 여백 */
+            /* ?곷떒(10px) + ?섎떒(10px) ?щ갚 */
             padding: 0;
             display: flex;
             flex-direction: column;
             margin-top: calc(10px + env(safe-area-inset-top));
-            /* 노치 가려짐 방지 및 대칭 여백 */
+            /* ?몄튂 媛?ㅼ쭚 諛⑹? 諛??移??щ갚 */
             margin-bottom: calc(10px + env(safe-area-inset-bottom));
-            /* 하단 10px 여백 유지 */
+            /* ?섎떒 10px ?щ갚 ?좎? */
         }
 
         .slider-wrapper {
             width: 100%;
             aspect-ratio: 1 / 0.7;
-            /* 높이를 30% 줄임 (기존 1:1) */
+            /* ?믪씠瑜?30% 以꾩엫 (湲곗〈 1:1) */
             position: relative;
             background: #f9f9f9;
             cursor: pointer;
@@ -414,7 +414,7 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
-            /* 가로세로 비율 유지하며 영역 채우기 */
+            /* 媛濡쒖꽭濡?鍮꾩쑉 ?좎??섎ŉ ?곸뿭 梨꾩슦湲?*/
             background: #fff;
             scroll-snap-align: start;
         }
@@ -429,7 +429,7 @@
             width: 30px;
             height: 30px;
             border: 3px solid #f3f3f3;
-            border-top: 3px solid var(--moket-green);
+            border-top: 3px solid var(--gonggu-green);
             border-radius: 50%;
             animation: spin 1s linear infinite;
         }
@@ -453,7 +453,7 @@
             overflow-y: auto;
         }
 
-        /* 상품 리스트 & 카드 원본 유지 */
+        /* ?곹뭹 由ъ뒪??& 移대뱶 ?먮낯 ?좎? */
         .sticky-header-group {
             position: sticky;
             top: 0;
@@ -487,7 +487,7 @@
         .date-btn {
             flex-shrink: 0;
             padding: 0 10px;
-            /* 기존 16px에서 10px로 축소 */
+            /* 湲곗〈 16px?먯꽌 10px濡?異뺤냼 */
             height: 34px;
             border-radius: var(--btn-radius);
             background: #fafafa;
@@ -499,9 +499,9 @@
         }
 
         .date-btn.active {
-            background: var(--moket-green);
+            background: var(--gonggu-green);
             color: var(--white);
-            border-color: var(--moket-green);
+            border-color: var(--gonggu-green);
         }
 
         .container {
@@ -672,7 +672,7 @@
             padding: 0 8px;
             border-radius: 0;
             height: 40px;
-            /* 전용 변수 사용 */
+            /* ?꾩슜 蹂???ъ슜 */
             border: 1.5px solid #eee;
             transition: all 0.2s ease;
             width: 100%;
@@ -681,8 +681,8 @@
 
         .qty-controls.selected {
             background: #eef9f2;
-            /* 수량이 1 이상일 때 배경색 (연한 녹색톤) */
-            border-color: var(--moket-green);
+            /* ?섎웾??1 ?댁긽????諛곌꼍??(?고븳 ?뱀깋?? */
+            border-color: var(--gonggu-green);
         }
 
         .qty-controls:active {
@@ -707,7 +707,7 @@
         }
 
         .qty-btn:active {
-            background: var(--moket-green) !important;
+            background: var(--gonggu-green) !important;
             color: white !important;
             transform: scale(0.9);
             box-shadow: none;
@@ -726,10 +726,10 @@
             background: none;
             font-weight: 800;
             font-size: 18px;
-            color: var(--moket-green);
+            color: var(--gonggu-green);
         }
 
-        /* 푸터 */
+        /* ?명꽣 */
         .footer {
             position: fixed;
             bottom: 0;
@@ -742,11 +742,11 @@
             max-width: 600px;
             left: 50%;
             transform: translateX(-50%) translateY(100%);
-            /* 아래로 숨김 */
+            /* ?꾨옒濡??④? */
             transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), visibility 0.4s;
-            /* 부드러운 슬라이딩 및 보임 유지 */
+            /* 遺?쒕윭???щ씪?대뵫 諛?蹂댁엫 ?좎? */
             visibility: hidden;
-            /* 클릭 방지 */
+            /* ?대┃ 諛⑹? */
         }
 
         .footer.visible {
@@ -757,20 +757,20 @@
         .main-submit-btn {
             width: 100%;
             height: 48px;
-            /* 디자인 통일 (기존 44px) */
+            /* ?붿옄???듭씪 (湲곗〈 44px) */
             line-height: 48px;
             padding: 0;
-            background: var(--moket-green);
+            background: var(--gonggu-green);
             color: var(--white);
             border: none;
             border-radius: 0;
             font-size: 18px;
-            /* 디자인 통일 (기존 15px) */
+            /* ?붿옄???듭씪 (湲곗〈 15px) */
             font-weight: 800;
             cursor: pointer;
         }
 
-        /* 전체화면 확대 */
+        /* ?꾩껜?붾㈃ ?뺣? */
         #fullscreen-overlay {
             display: none;
             position: fixed;
@@ -830,7 +830,7 @@
             backdrop-filter: blur(4px);
         }
 
-        /* 정보변경 모달용 입력창 */
+        /* ?뺣낫蹂寃?紐⑤떖???낅젰李?*/
         .input-group {
             margin-bottom: 20px;
             text-align: left;
@@ -855,13 +855,13 @@
             line-height: 1.4;
         }
 
-        /* [추가] 주문자명 변경 메뉴로 진입 시 카카오 로그인 버튼 숨김 */
+        /* [異붽?] 二쇰Ц?먮챸 蹂寃?硫붾돱濡?吏꾩엯 ??移댁뭅??濡쒓렇??踰꾪듉 ?④? */
         #profile-modal:not(.login-forced) #kakao-login-prompt,
         #profile-modal:not(.login-forced) #btn-kakao-login {
             display: none !important;
         }
 
-        /* 장바구니 버튼 */
+        /* ?λ컮援щ땲 踰꾪듉 */
         .cart-btn {
             justify-self: end;
             display: flex;
@@ -869,7 +869,7 @@
             align-items: center;
             justify-content: center;
             gap: 9px;
-            /* 영어 로고 중앙에 맞추기 위한 간격 조정 */
+            /* ?곸뼱 濡쒓퀬 以묒븰??留욎텛湲??꾪븳 媛꾧꺽 議곗젙 */
             cursor: pointer;
             color: var(--white);
         }
@@ -880,7 +880,7 @@
     <div class="header">
         <div class="menu-btn" onclick="toggleMenu()">
             <div class="menu-icons"><span></span><span></span><span></span></div>
-            <span class="btn-label">메뉴</span>
+            <span class="btn-label">硫붾돱</span>
         </div>
         <div class="header-center" onclick="refreshAllData()" style="cursor: pointer;">
             <!-- Titles Removed -->
@@ -892,7 +892,7 @@
                 <path d="M3 6h18"></path>
                 <path d="M16 10a4 4 0 0 1-8 0"></path>
             </svg>
-            <span class="btn-label">주문내역</span>
+            <span class="btn-label">二쇰Ц?댁뿭</span>
         </div>
     </div>
     <div id="side-menu-overlay" class="side-menu-overlay" onclick="toggleMenu()"></div>
@@ -902,75 +902,75 @@
                 <!-- Titles Removed -->
             </div>
         </div>
-        <p id="menu-greeting"><span class="name-badge">주문자</span>님 반갑습니다</p>
+        <p id="menu-greeting"><span class="name-badge">二쇰Ц??/span>??諛섍컩?듬땲??/p>
         <ul class="menu-list">
-            <li onclick="openSideModal('profile-modal')">주문자명 변경</li>
-            <li onclick="openSideModal('location-modal')">매장위치</li>
-            <li onclick="openSideModal('hours-modal')">영업시간</li>
-            <li onclick="window.open('https://open.kakao.com/o/')">카카오톡 문의하기</li>
+            <li onclick="openSideModal('profile-modal')">二쇰Ц?먮챸 蹂寃?/li>
+            <li onclick="openSideModal('location-modal')">留ㅼ옣?꾩튂</li>
+            <li onclick="openSideModal('hours-modal')">?곸뾽?쒓컙</li>
+            <li onclick="window.open('https://open.kakao.com/o/')">移댁뭅?ㅽ넚 臾몄쓽?섍린</li>
         </ul>
     </div>
     <div id="profile-modal" class="modal-overlay">
         <div class="modal-content">
             <div
-                style="background:var(--moket-green); padding: 25px 20px 25px 20px; border-radius: 0; margin: -25px -25px 10px -25px; text-align: center;">
+                style="background:var(--gonggu-green); padding: 25px 20px 25px 20px; border-radius: 0; margin: -25px -25px 10px -25px; text-align: center;">
                 <h3 id="profile-modal-title"
                     style="margin: 0; font-weight: 800; color: var(--white); font-size: 20px; letter-spacing: 1px;">
-                    주문자 정보</h3>
+                    二쇰Ц???뺣낫</h3>
             </div>
             <!-- Kakao prompt removed -->
-            <div class="input-group"><strong>주문자명</strong><input id="input-name" type="text" class="modal-input"
-                    placeholder="주문자명 입력">
-                <div class="input-hint">오픈채팅방 닉네임과 동일하게 설정 해 주세요.</div>
+            <div class="input-group"><strong>二쇰Ц?먮챸</strong><input id="input-name" type="text" class="modal-input"
+                    placeholder="二쇰Ц?먮챸 ?낅젰">
+                <div class="input-hint">?ㅽ뵂梨꾪똿諛??됰꽕?꾧낵 ?숈씪?섍쾶 ?ㅼ젙 ??二쇱꽭??</div>
             </div>
-            <div class="input-group"><strong>연락처</strong><input id="input-phone" type="tel" class="modal-input"
+            <div class="input-group"><strong>?곕씫泥?/strong><input id="input-phone" type="tel" class="modal-input"
                     placeholder="010-0000-0000">
-                <div class="input-hint">주문확인안내와 픽업안내를 받아보실 연락처를 입력 해 주세요.</div>
+                <div class="input-hint">二쇰Ц?뺤씤?덈궡? ?쎌뾽?덈궡瑜?諛쏆븘蹂댁떎 ?곕씫泥섎? ?낅젰 ??二쇱꽭??</div>
             </div>
             <button id="btn-kakao-login" class="btn-common btn-kakao" onclick="loginWithKakao()">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" style="margin-right:8px;">
                     <path
                         d="M10 3C5.582 3 2 5.835 2 9.333c0 2.27 1.517 4.256 3.82 5.41l-.97 3.543c-.06.22.185.397.378.27l4.162-2.735c.203.01.41.015.61.015 4.418 0 8-2.835 8-6.333S14.418 3 10 3z" />
                 </svg>
-                카카오로 1초 로그인
+                移댁뭅?ㅻ줈 1珥?濡쒓렇??
             </button>
-            <button class="btn-common btn-primary" onclick="saveProfile()">저장하기</button><button
-                class="btn-common btn-close" onclick="closeModal('profile-modal')">닫기</button>
+            <button class="btn-common btn-primary" onclick="saveProfile()">??ν븯湲?/button><button
+                class="btn-common btn-close" onclick="closeModal('profile-modal')">?リ린</button>
         </div>
     </div>
     <div id="save-confirm-modal" class="modal-overlay">
         <div class="modal-content" style="text-align: center; width: 80%; max-width: 300px; padding: 30px 20px;">
-            <h3 style="margin: 0; font-weight: 900; font-size: 1.3rem;">저장되었습니다</h3>
+            <h3 style="margin: 0; font-weight: 900; font-size: 1.3rem;">??λ릺?덉뒿?덈떎</h3>
         </div>
     </div>
     <div id="location-modal" class="modal-overlay">
         <div class="modal-content" style="text-align: center;">
             <div
-                style="background:var(--moket-green); padding: 25px 20px 25px 20px; border-radius: 0; margin: -25px -25px 10px -25px; text-align: center;">
+                style="background:var(--gonggu-green); padding: 25px 20px 25px 20px; border-radius: 0; margin: -25px -25px 10px -25px; text-align: center;">
                 <h3 style="margin: 0; font-weight: 800; color: var(--white); font-size: 1.35rem; letter-spacing: 1px;">
-                    매장 위치</h3>
+                    留ㅼ옣 ?꾩튂</h3>
             </div>
-            <p style="font-size:15px; font-weight:700; margin:20px 0; line-height:1.5;">서울시 용산구 한강대로 405</p><a
-                href="https://map.naver.com/v5/search/서울시 용산구 한강대로 405" target="_blank" class="btn-common btn-naver">네이버
-                지도로 보기</a><button class="btn-common btn-close" onclick="closeModal('location-modal')">닫기</button>
+            <p style="font-size:15px; font-weight:700; margin:20px 0; line-height:1.5;">?쒖슱???⑹궛援??쒓컯?濡?405</p><a
+                href="https://map.naver.com/v5/search/?쒖슱???⑹궛援??쒓컯?濡?405" target="_blank" class="btn-common btn-naver">?ㅼ씠踰?
+                吏?꾨줈 蹂닿린</a><button class="btn-common btn-close" onclick="closeModal('location-modal')">?リ린</button>
         </div>
     </div>
     <div id="hours-modal" class="modal-overlay">
         <div class="modal-content">
             <div
-                style="background:var(--moket-green); padding: 25px 20px 25px 20px; border-radius: 0; margin: -25px -25px 10px -25px; text-align: center;">
+                style="background:var(--gonggu-green); padding: 25px 20px 25px 20px; border-radius: 0; margin: -25px -25px 10px -25px; text-align: center;">
                 <h3 style="margin: 0; font-weight: 800; color: var(--white); font-size: 1.35rem; letter-spacing: 1px;">
-                    영업시간 안내</h3>
+                    ?곸뾽?쒓컙 ?덈궡</h3>
             </div>
             <div
                 style="line-height:2.2; font-weight:700; font-size:15px; margin-bottom:10px; text-align: left; padding-left: 10%;">
-                • 평일:
-                10:00 - 19:00<br>• 토요일: 11:00 - 17:00<br>• 일요일/공휴일: 휴무 </div><button class="btn-common btn-close"
-                onclick="closeModal('hours-modal')">닫기</button>
+                ???됱씪:
+                10:00 - 19:00<br>???좎슂?? 11:00 - 17:00<br>???쇱슂??怨듯쑕?? ?대Т </div><button class="btn-common btn-close"
+                onclick="closeModal('hours-modal')">?リ린</button>
         </div>
     </div>
     <div class="sticky-header-group">
-        <div class="date-section-title">픽업일별 상품 목록</div>
+        <div class="date-section-title">?쎌뾽?쇰퀎 ?곹뭹 紐⑸줉</div>
         <div class="date-filter-container" id="date-filters"></div>
     </div>
     <div class="container" id="product-list"></div>
@@ -978,7 +978,7 @@
         <div class="modal-content">
             <div class="slider-wrapper" onclick="openFullscreen()">
                 <div class="slider-container" id="slider-area"></div>
-                <div class="touch-guide">탭하여 확대보기</div>
+                <div class="touch-guide">??븯???뺣?蹂닿린</div>
             </div>
             <div class="detail-body">
                 <h2 id="detail-title"
@@ -990,7 +990,7 @@
                 </div>
             </div>
             <div style="padding: 12px 20px; border-top: 1px solid #f5f5f5;"><button class="btn-common btn-close"
-                    onclick="closeModal('detail-overlay')" style="margin-top: 0;">닫기</button></div>
+                    onclick="closeModal('detail-overlay')" style="margin-top: 0;">?リ린</button></div>
         </div>
     </div>
     <div id="fullscreen-overlay" onclick="closeFullscreen()">
@@ -1002,33 +1002,33 @@
             <div id="confirm-item-list"
                 style="text-align:left; background:#f5f5f5; padding: 15px 8px; border-radius:0; margin:10px 0 20px 0; font-size:15px; line-height:1.7; max-height:350px; overflow-y:auto;">
             </div>
-            <div style="font-weight:900; font-size:17px; margin-bottom:15px;">총 합계: <span id="confirm-total-price"
-                    style="color:var(--nego-orange);">0원</span></div>
+            <div style="font-weight:900; font-size:17px; margin-bottom:15px;">珥??⑷퀎: <span id="confirm-total-price"
+                    style="color:var(--nego-orange);">0??/span></div>
             <div
                 style="text-align:left; font-size:13px; margin: 15px -10px 10px 0; color:#455464; line-height:1.6; padding:0; font-weight:700;">
-                <div>✅ 주문취소는 주문당일 24시까지 가능합니다.</div>
-                <div>✅ 픽업기간은 입고일 포함 3일(휴무일 제외)입니다.</div>
-                <div>✅ 픽업기간 이후에는 원칙적으로 픽업이 불가능합니다.</div>
-                <div>✅ 픽업기간 이후 수령을 원하시면 카카오톡으로 문의바랍니다.</div>
+                <div>??二쇰Ц痍⑥냼??二쇰Ц?뱀씪 24?쒓퉴吏 媛?ν빀?덈떎.</div>
+                <div>???쎌뾽湲곌컙? ?낃퀬???ы븿 3???대Т???쒖쇅)?낅땲??</div>
+                <div>???쎌뾽湲곌컙 ?댄썑?먮뒗 ?먯튃?곸쑝濡??쎌뾽??遺덇??ν빀?덈떎.</div>
+                <div>???쎌뾽湲곌컙 ?댄썑 ?섎졊???먰븯?쒕㈃ 移댁뭅?ㅽ넚?쇰줈 臾몄쓽諛붾엻?덈떎.</div>
             </div>
             <div
                 style="margin-bottom:20px; font-weight:700; font-size:13px; color:#455464; display:flex; align-items:center; justify-content:center; gap:6px;">
                 <input type="checkbox" id="confirm-notice-check"
                     style="width:18px; height:18px; margin:0; cursor:pointer;">
-                <label for="confirm-notice-check" style="cursor:pointer;">위 내용을 확인하였습니다.</label>
+                <label for="confirm-notice-check" style="cursor:pointer;">???댁슜???뺤씤?섏??듬땲??</label>
             </div>
             <div style="display:flex; gap:10px;"><button class="btn-common btn-close"
                     onclick="document.getElementById('confirm-notice-check').checked = false; closeModal('confirm-overlay')"
-                    style="margin-top: 0;">취소</button><button id="btn-submit-order" class="btn-common btn-primary"
-                    onclick="completeOrder()" style="margin-top: 0;">주문확정</button></div>
+                    style="margin-top: 0;">痍⑥냼</button><button id="btn-submit-order" class="btn-common btn-primary"
+                    onclick="completeOrder()" style="margin-top: 0;">二쇰Ц?뺤젙</button></div>
         </div>
     </div>
     <div class="footer" id="main-footer">
         <div
             style="display:flex; justify-content:space-between; align-items:center; padding-bottom:12px; font-weight:800; font-size: 17px;">
-            <span id="total-qty-text">총 0개 선택</span><span id="total-price-text"
-                style="color:var(--nego-orange); font-size:18px;">0원</span>
-        </div><button class="main-submit-btn" onclick="openConfirm()">주문하기</button>
+            <span id="total-qty-text">珥?0媛??좏깮</span><span id="total-price-text"
+                style="color:var(--nego-orange); font-size:18px;">0??/span>
+        </div><button class="main-submit-btn" onclick="openConfirm()">二쇰Ц?섍린</button>
     </div>
     <div id="system-modal" class="modal-overlay" style="z-index: 9999;">
         <div class="modal-content" style="text-align: center; width: 85%; max-width: 350px; padding: 25px 20px;">
@@ -1038,43 +1038,43 @@
             <div id="sys-modal-btns" style="display: flex; gap: 10px; justify-content: center;"></div>
         </div>
     </div>
-    <!-- 주문내역 모달 -->
+    <!-- 二쇰Ц?댁뿭 紐⑤떖 -->
     <div id="history-modal" class="modal-overlay">
         <div class="modal-content">
             <div
-                style="background:var(--moket-green); padding: 30px 20px 25px 20px; border-radius: 0; margin: 0 0 10px 0; text-align: center;">
+                style="background:var(--gonggu-green); padding: 30px 20px 25px 20px; border-radius: 0; margin: 0 0 10px 0; text-align: center;">
                 <h3 id="history-modal-title"
                     style="margin: 0; font-weight: 800; color: var(--white); font-size: 17px; letter-spacing: 1px;">
-                    주문내역</h3>
+                    二쇰Ц?댁뿭</h3>
             </div>
             <div style="padding: 0 20px 0 20px; flex-shrink: 0;">
                 <div
                     style="display: flex; justify-content: center; gap: 6px; margin-bottom: 8px; border-bottom: 1.5px solid #eee; padding-bottom: 8px;">
                     <button class="date-btn active" id="status-order" onclick="filterStatus('order')"
-                        style="height:32px; font-size:15px; flex:1; padding:0; font-weight:900;">전체</button>
+                        style="height:32px; font-size:15px; flex:1; padding:0; font-weight:900;">?꾩껜</button>
                     <button class="date-btn" id="status-stocked" onclick="filterStatus('stocked')"
-                        style="height:32px; font-size:15px; flex:1; padding:0; font-weight:900;">입고</button>
+                        style="height:32px; font-size:15px; flex:1; padding:0; font-weight:900;">?낃퀬</button>
                     <button class="date-btn" id="status-pickup" onclick="filterStatus('pickup')"
-                        style="height:32px; font-size:15px; flex:1; padding:0; font-weight:900;">픽업</button>
+                        style="height:32px; font-size:15px; flex:1; padding:0; font-weight:900;">?쎌뾽</button>
                     <button class="date-btn" id="status-cancel" onclick="filterStatus('cancel')"
-                        style="height:32px; font-size:15px; flex:1; padding:0; font-weight:900;">취소</button>
+                        style="height:32px; font-size:15px; flex:1; padding:0; font-weight:900;">痍⑥냼</button>
                 </div>
                 <div style="display: flex; justify-content: center; gap: 6px; margin-bottom: 8px;">
                     <button class="date-btn" id="filter-all" onclick="filterHistory('all')"
-                        style="height:32px; font-size:15px; flex:1; padding:0;">전체</button>
+                        style="height:32px; font-size:15px; flex:1; padding:0;">?꾩껜</button>
                     <button class="date-btn active" id="filter-today" onclick="filterHistory('today')"
-                        style="height:32px; font-size:15px; flex:1; padding:0;">오늘</button>
+                        style="height:32px; font-size:15px; flex:1; padding:0;">?ㅻ뒛</button>
                     <button class="date-btn" id="filter-week" onclick="filterHistory('week')"
-                        style="height:32px; font-size:15px; flex:1; padding:0;">1주일</button>
+                        style="height:32px; font-size:15px; flex:1; padding:0;">1二쇱씪</button>
                     <button class="date-btn" id="filter-month" onclick="filterHistory('month')"
-                        style="height:32px; font-size:15px; flex:1; padding:0;">1개월</button>
+                        style="height:32px; font-size:15px; flex:1; padding:0;">1媛쒖썡</button>
                 </div>
                 <div
                     style="display: flex; justify-content: center; gap: 8px; margin-bottom: 0; border-top: 1.5px solid #eee; padding-top: 8px;">
                     <button class="date-btn active" id="btn-sort-pickup" onclick="changeSortMode('pickupDate')"
-                        style="height:32px; font-size:15px; flex:2;">픽업순</button>
+                        style="height:32px; font-size:15px; flex:2;">?쎌뾽??/button>
                     <button class="date-btn" id="btn-sort-order" onclick="changeSortMode('timestamp')"
-                        style="height:32px; font-size:15px; flex:2;">주문순</button>
+                        style="height:32px; font-size:15px; flex:2;">二쇰Ц??/button>
                     <button id="btn-sort-dir" onclick="toggleSortDir()"
                         style="height: 32px; width: 32px; padding: 0; background: #fafafa; border: 1.5px solid #eee; border-radius: 0; color: #455464; display: flex; align-items: center; justify-content: center; cursor: pointer; outline: none;">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1090,18 +1090,18 @@
                 </div>
             </div>
             <div id="history-list" style="flex: 1; overflow-y: auto; padding: 0 20px 20px 20px; text-align: left;">
-                <!-- 동적 생성 -->
+                <!-- ?숈쟻 ?앹꽦 -->
             </div>
             <div style="padding: 15px 10px; border-top: 1px solid #f5f5f5; flex-shrink: 0;">
                 <button class="btn-common btn-close" onclick="closeModal('history-modal')"
-                    style="margin-top: 0;">닫기</button>
+                    style="margin-top: 0;">?リ린</button>
             </div>
         </div>
     </div>
 
     <script>const API_URL = 'https://script.google.com/macros/s/AKfycbxS8_XA9SnBGEPNL1_LC_E2e3kIEGKYKauhBdBxoX_WRNVO8IWI0zovb5mdMFtaMo7T/exec'
 
-        // [카카오 초기화]
+        // [移댁뭅??珥덇린??
         try {
             if (typeof Kakao !== 'undefined') {
                 if (!Kakao.isInitialized()) {
@@ -1116,18 +1116,18 @@
         }
 
         let productsData = [];
-        let cart = {}; // { 상품명: 수량 } 저장용 장바구니 상태
-        let isHistoryProcessing = false; // 주문내역 처리 중 플래그 추가
+        let cart = {}; // { ?곹뭹紐? ?섎웾 } ??μ슜 ?λ컮援щ땲 ?곹깭
+        let isHistoryProcessing = false; // 二쇰Ц?댁뿭 泥섎━ 以??뚮옒洹?異붽?
 
         /**
-         * [추가] 재고 동기화 이슈 해결을 위한 상태 잠금 (State Locking)
-         * { "matchKey|상품명": { stock: 수량, expire: 만료시간 } }
-         * 주문/취소 직후 서버 데이터가 늦게 갱신될 때 로컬 상태를 강제로 유지하는 용도
+         * [異붽?] ?ш퀬 ?숆린???댁뒋 ?닿껐???꾪븳 ?곹깭 ?좉툑 (State Locking)
+         * { "matchKey|?곹뭹紐?: { stock: ?섎웾, expire: 留뚮즺?쒓컙 } }
+         * 二쇰Ц/痍⑥냼 吏곹썑 ?쒕쾭 ?곗씠?곌? ??쾶 媛깆떊????濡쒖뺄 ?곹깭瑜?媛뺤젣濡??좎??섎뒗 ?⑸룄
          */
         let pendingStockUpdates = {};
-        const STOCK_LOCK_DURATION = 15000; // 15초 동안 유지
+        const STOCK_LOCK_DURATION = 15000; // 15珥??숈븞 ?좎?
 
-        // [스크롤 방지]
+        // [?ㅽ겕濡?諛⑹?]
         function checkScrollLock() {
             const modals = document.querySelectorAll('.modal-overlay');
             const sideMenu = document.getElementById('side-menu');
@@ -1144,15 +1144,15 @@
             document.body.style.overflow = isAnyOpen ? 'hidden' : '';
         }
 
-        // [시스템 모달]
+        // [?쒖뒪??紐⑤떖]
         function showSystemModal(msg, type, yesCallback, noCallback) {
             const modal = document.getElementById('system-modal');
             const msgDiv = document.getElementById('sys-modal-msg');
             const btnDiv = document.getElementById('sys-modal-btns');
 
-            msgDiv.innerHTML = msg; // innerText 대신 innerHTML 사용하여 스타일 적용 허용
-            msgDiv.style.textAlign = 'center'; // 전체 문구 중앙 정렬 적용
-            msgDiv.style.whiteSpace = 'pre-wrap'; // \n 줄바꿈 지원
+            msgDiv.innerHTML = msg; // innerText ???innerHTML ?ъ슜?섏뿬 ?ㅽ????곸슜 ?덉슜
+            msgDiv.style.textAlign = 'center'; // ?꾩껜 臾멸뎄 以묒븰 ?뺣젹 ?곸슜
+            msgDiv.style.whiteSpace = 'pre-wrap'; // \n 以꾨컮轅?吏??
             btnDiv.innerHTML = '';
 
             if (type === 'confirm') {
@@ -1160,7 +1160,7 @@
                 btnNo.className = 'btn-common btn-close';
                 btnNo.style.height = '48px';
                 btnNo.style.fontSize = '1rem';
-                btnNo.innerText = '취소';
+                btnNo.innerText = '痍⑥냼';
 
                 btnNo.onclick = () => {
                     modal.style.display = 'none';
@@ -1172,7 +1172,7 @@
                 btnYes.className = 'btn-common btn-primary';
                 btnYes.style.height = '48px';
                 btnYes.style.fontSize = '1rem';
-                btnYes.innerText = '확인';
+                btnYes.innerText = '?뺤씤';
 
                 btnYes.onclick = async () => {
                     if (yesCallback) {
@@ -1190,7 +1190,7 @@
                 btnOk.className = 'btn-common btn-primary';
                 btnOk.style.height = '48px';
                 btnOk.style.fontSize = '1rem';
-                btnOk.innerText = '확인';
+                btnOk.innerText = '?뺤씤';
 
                 btnOk.onclick = () => {
                     modal.style.display = 'none';
@@ -1199,12 +1199,12 @@
                 };
                 btnDiv.appendChild(btnOk);
             } else if (type === 'loading') {
-                // [수정] 주문 확인 중 모달에도 확인 버튼 추가
+                // [?섏젙] 二쇰Ц ?뺤씤 以?紐⑤떖?먮룄 ?뺤씤 踰꾪듉 異붽?
                 const btnOk = document.createElement('button');
                 btnOk.className = 'btn-common btn-primary';
                 btnOk.style.height = '48px';
                 btnOk.style.fontSize = '1rem';
-                btnOk.innerText = '확인';
+                btnOk.innerText = '?뺤씤';
 
                 btnOk.onclick = () => {
                     modal.style.display = 'none';
@@ -1213,14 +1213,14 @@
                 btnDiv.appendChild(btnOk);
             }
 
-            // 버튼 영역 항상 노출
+            // 踰꾪듉 ?곸뿭 ??긽 ?몄텧
             btnDiv.style.display = 'flex';
 
             modal.style.display = 'flex';
             checkScrollLock();
         }
 
-        // [제어] 햄버거 메뉴 및 모달
+        // [?쒖뼱] ?꾨쾭嫄?硫붾돱 諛?紐⑤떖
         function toggleMenu() {
             const side = document.getElementById('side-menu');
             const overlay = document.getElementById('side-menu-overlay');
@@ -1241,27 +1241,27 @@
             checkScrollLock();
         }
 
-        // [프로필] 저장 및 로드
+        // [?꾨줈?? ???諛?濡쒕뱶
         function saveProfile() {
             const name = document.getElementById('input-name').value;
             const phone = document.getElementById('input-phone').value;
             const greeting = document.getElementById('menu-greeting');
 
             if (!name.trim() || !phone.trim()) {
-                showSystemModal("주문자명과 연락처를 입력해주세요.", 'alert');
+                showSystemModal("二쇰Ц?먮챸怨??곕씫泥섎? ?낅젰?댁＜?몄슂.", 'alert');
                 return;
             }
 
-            // 로컬 스토리지에 저장
-            localStorage.setItem('moket_user_name', name);
-            localStorage.setItem('moket_user_phone', phone);
+            // 濡쒖뺄 ?ㅽ넗由ъ??????
+            localStorage.setItem('gonggu_user_name', name);
+            localStorage.setItem('gonggu_user_phone', phone);
 
             if (name.trim()) {
-                greeting.innerHTML = `<span class="name-badge">${name}</span>님`;
+                greeting.innerHTML = `<span class="name-badge">${name}</span>??;
             }
 
             else {
-                greeting.innerHTML = `<span class="name-badge">주문자</span>님`;
+                greeting.innerHTML = `<span class="name-badge">二쇰Ц??/span>??;
             }
 
             closeModal('profile-modal');
@@ -1277,12 +1277,12 @@
         }
 
         function loadProfile() {
-            const name = localStorage.getItem('moket_user_name');
-            const phone = localStorage.getItem('moket_user_phone');
+            const name = localStorage.getItem('gonggu_user_name');
+            const phone = localStorage.getItem('gonggu_user_phone');
 
             if (name) {
                 document.getElementById('input-name').value = name;
-                document.getElementById('menu-greeting').innerHTML = `<span class="name-badge">${name}</span>님`;
+                document.getElementById('menu-greeting').innerHTML = `<span class="name-badge">${name}</span>??;
             }
 
             if (phone) {
@@ -1290,45 +1290,45 @@
             }
         }
 
-        // [카카오 로그인] - 제거됨
+        // [移댁뭅??濡쒓렇?? - ?쒓굅??
         function loginWithKakao() {
-            showSystemModal("카카오 로그인 기능은 지원하지 않습니다.", 'alert');
+            showSystemModal("移댁뭅??濡쒓렇??湲곕뒫? 吏?먰븯吏 ?딆뒿?덈떎.", 'alert');
         }
 
-        // [주문내역] 저장 및 조회
+        // [二쇰Ц?댁뿭] ???諛?議고쉶
         function saveOrderToHistory(orderData) {
-            const history = JSON.parse(localStorage.getItem('moket_order_history') || '[]');
-            history.push(orderData); // 순차적으로 추가
-            localStorage.setItem('moket_order_history', JSON.stringify(history));
+            const history = JSON.parse(localStorage.getItem('gonggu_order_history') || '[]');
+            history.push(orderData); // ?쒖감?곸쑝濡?異붽?
+            localStorage.setItem('gonggu_order_history', JSON.stringify(history));
         }
 
-        // [주문내역] 자동 삭제 (픽업일 기준 8일째 자정)
+        // [二쇰Ц?댁뿭] ?먮룞 ??젣 (?쎌뾽??湲곗? 8?쇱㎏ ?먯젙)
         function cleanExpiredOrders() {
-            const history = JSON.parse(localStorage.getItem('moket_order_history') || '[]');
+            const history = JSON.parse(localStorage.getItem('gonggu_order_history') || '[]');
             if (history.length === 0) return;
 
             const now = new Date();
-            // 오늘 자정 (시간/분/초 제거)
+            // ?ㅻ뒛 ?먯젙 (?쒓컙/遺?珥??쒓굅)
             const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
 
             const filteredHistory = history.filter(order => {
-                if (!order.pickupDate) return false; // 픽업일 정보가 없는 구버전 내역은 삭제
+                if (!order.pickupDate) return false; // ?쎌뾽???뺣낫媛 ?녿뒗 援щ쾭???댁뿭? ??젣
 
                 const pickup = new Date(order.pickupDate);
-                if (isNaN(pickup.getTime())) return false; // 유효하지 않은 날짜도 삭제
+                if (isNaN(pickup.getTime())) return false; // ?좏슚?섏? ?딆? ?좎쭨????젣
 
-                // 픽업일 기준 8일째 자정 계산 (예: 1일 픽업 -> 9일 00:00 삭제)
+                // ?쎌뾽??湲곗? 8?쇱㎏ ?먯젙 怨꾩궛 (?? 1???쎌뾽 -> 9??00:00 ??젣)
                 const expiryTime = new Date(pickup.getFullYear(), pickup.getMonth(), pickup.getDate() + 8).getTime();
 
                 return today < expiryTime;
             });
 
             if (filteredHistory.length !== history.length) {
-                localStorage.setItem('moket_order_history', JSON.stringify(filteredHistory));
+                localStorage.setItem('gonggu_order_history', JSON.stringify(filteredHistory));
             }
         }
 
-        // [시간 포맷] YYYY-MM-DD (요일) HH:mm
+        // [?쒓컙 ?щ㎎] YYYY-MM-DD (?붿씪) HH:mm
         function formatOrderDate(dateInput) {
             const d = new Date(dateInput);
             if (isNaN(d.getTime())) return dateInput;
@@ -1337,36 +1337,36 @@
             const day = String(d.getDate()).padStart(2, '0');
             const hh = String(d.getHours()).padStart(2, '0');
             const mm = String(d.getMinutes()).padStart(2, '0');
-            const week = ['일', '월', '화', '수', '목', '금', '토'];
+            const week = ['??, '??, '??, '??, '紐?, '湲?, '??];
             const dayOfWeek = week[d.getDay()];
             return `${y}-${m}-${day} (${dayOfWeek}) ${hh}:${mm}`;
         }
 
-        // 픽업일 포맷] YYYY-MM-DD (요일)
+        // ?쎌뾽???щ㎎] YYYY-MM-DD (?붿씪)
         function formatPickupDate(dateInput) {
             const d = new Date(dateInput);
             if (isNaN(d.getTime())) return dateInput;
             const y = d.getFullYear();
             const m = String(d.getMonth() + 1).padStart(2, '0');
             const day = String(d.getDate()).padStart(2, '0');
-            const week = ['일',
-                '월',
-                '화',
-                '수',
-                '목',
-                '금',
-                '토'];
+            const week = ['??,
+                '??,
+                '??,
+                '??,
+                '紐?,
+                '湲?,
+                '??];
             const dayOfWeek = week[d.getDay()];
             return `${y}-${m}-${day} (${dayOfWeek})`;
         }
-        // [필수] 한국어 날짜 형식을 Date 객체로 변환 (정렬 및 필터용)
+        // [?꾩닔] ?쒓뎅???좎쭨 ?뺤떇??Date 媛앹껜濡?蹂??(?뺣젹 諛??꾪꽣??
         function parseKRDate(s) {
             if (!s) return new Date();
             if (s instanceof Date) return s;
             try {
                 let str = String(s).replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
-                // "24년 2월 10일 (화)" 또는 "2024년 2월 10일 (화)" 또는 "2024-02-10"
-                const m = str.match(/(?:20)?(\d{2})년\s*(\d{1,2})월\s*(\d{1,2})일/);
+                // "24??2??10??(??" ?먮뒗 "2024??2??10??(??" ?먮뒗 "2024-02-10"
+                const m = str.match(/(?:20)?(\d{2})??s*(\d{1,2})??s*(\d{1,2})??);
                 if (m) {
                     const year = parseInt(m[1]) + 2000;
                     const month = parseInt(m[2]) - 1;
@@ -1384,52 +1384,52 @@
             }
         }
 
-        // [추가] 미픽업 주문 확인 및 알림 모달
+        // [異붽?] 誘명뵿??二쇰Ц ?뺤씤 諛??뚮┝ 紐⑤떖
         async function checkUnpickedOrders() {
-            // [세션당 1회 제한] 한 번 확인했다면 이번 접속(세션)에서는 다시 띄우지 않음
-            if (sessionStorage.getItem('moket_unpicked_checked') === 'true') {
-                console.log("[미픽업 확인] 이번 세션에서 이미 확인했습니다.");
+            // [?몄뀡??1???쒗븳] ??踰??뺤씤?덈떎硫??대쾲 ?묒냽(?몄뀡)?먯꽌???ㅼ떆 ?꾩슦吏 ?딆쓬
+            if (sessionStorage.getItem('gonggu_unpicked_checked') === 'true') {
+                console.log("[誘명뵿???뺤씤] ?대쾲 ?몄뀡?먯꽌 ?대? ?뺤씤?덉뒿?덈떎.");
                 return;
             }
 
-            const name = (localStorage.getItem('moket_user_name') || "").trim();
-            const phone = (localStorage.getItem('moket_user_phone') || "").trim();
+            const name = (localStorage.getItem('gonggu_user_name') || "").trim();
+            const phone = (localStorage.getItem('gonggu_user_phone') || "").trim();
 
             if (!name || !phone) {
-                console.log("[미픽업 확인] 사용자 정보(이름/번호)가 입력되지 않아 확인을 중단합니다.");
+                console.log("[誘명뵿???뺤씤] ?ъ슜???뺣낫(?대쫫/踰덊샇)媛 ?낅젰?섏? ?딆븘 ?뺤씤??以묐떒?⑸땲??");
                 return;
             }
 
-            // 확인 표시 저장 (세션 종료 전까지 유지)
-            sessionStorage.setItem('moket_unpicked_checked', 'true');
+            // ?뺤씤 ?쒖떆 ???(?몄뀡 醫낅즺 ?꾧퉴吏 ?좎?)
+            sessionStorage.setItem('gonggu_unpicked_checked', 'true');
 
             try {
-                console.log(`[미픽업 확인] ${name} (${phone}) 님의 내역을 서버에서 조회합니다...`);
-                // 사용자의 최근 주문 내역 가져오기 (캐시 방지 + 월별 검색 범위 확인용)
+                console.log(`[誘명뵿???뺤씤] ${name} (${phone}) ?섏쓽 ?댁뿭???쒕쾭?먯꽌 議고쉶?⑸땲??..`);
+                // ?ъ슜?먯쓽 理쒓렐 二쇰Ц ?댁뿭 媛?몄삤湲?(罹먯떆 諛⑹? + ?붾퀎 寃??踰붿쐞 ?뺤씤??
                 const historyUrl = `${API_URL}?header=history&name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&scope=recent&t=${Date.now()}`;
 
                 const response = await fetch(historyUrl);
                 if (!response.ok) {
-                    console.error("[미픽업 확인] 서버 응답 오류:", response.status);
+                    console.error("[誘명뵿???뺤씤] ?쒕쾭 ?묐떟 ?ㅻ쪟:", response.status);
                     return;
                 }
 
                 const historyData = await response.json();
-                console.log("[미픽업 확인] 서버 수신 데이터:", historyData);
+                console.log("[誘명뵿???뺤씤] ?쒕쾭 ?섏떊 ?곗씠??", historyData);
 
                 if (!Array.isArray(historyData)) {
                     if (historyData.result === "error") {
-                        console.error("[미픽업 확인] 서버 에러:", historyData.message);
+                        console.error("[誘명뵿???뺤씤] ?쒕쾭 ?먮윭:", historyData.message);
                     }
                     return;
                 }
 
                 if (historyData.length === 0) {
-                    console.log("[미픽업 확인] 최근 주문(이번 달/지난 달) 내역이 없습니다. (조회 URL: " + historyUrl + ")");
+                    console.log("[誘명뵿???뺤씤] 理쒓렐 二쇰Ц(?대쾲 ??吏???? ?댁뿭???놁뒿?덈떎. (議고쉶 URL: " + historyUrl + ")");
                     return;
                 }
 
-                // [판별] '수령완료', '취소', '미입고'가 아닌 것 + 오늘 포함 이전 날짜인 것만 알림
+                // [?먮퀎] '?섎졊?꾨즺', '痍⑥냼', '誘몄엯怨?媛 ?꾨땶 寃?+ ?ㅻ뒛 ?ы븿 ?댁쟾 ?좎쭨??寃껊쭔 ?뚮┝
                 const now = new Date();
                 const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
 
@@ -1437,7 +1437,7 @@
                     const itemName = String(order.item || "");
                     const receivedStatus = String(order.received || "").trim();
 
-                    // 날짜 비교 로직 (order.pickupDate: "2026년 2월 8일 (일)" -> "2026-02-08")
+                    // ?좎쭨 鍮꾧탳 濡쒖쭅 (order.pickupDate: "2026??2??8??(??" -> "2026-02-08")
                     const dateNums = (order.pickupDate || "").match(/\d+/g);
                     let isTodayOrPast = true;
                     if (dateNums && dateNums.length >= 3) {
@@ -1445,40 +1445,40 @@
                         isTodayOrPast = (orderDateStr <= todayStr);
                     }
 
-                    const isCanceled = itemName.includes("[취소]") || receivedStatus === "취소완료";
-                    const isReceived = (order.received === true || receivedStatus === "수령완료");
+                    const isCanceled = itemName.includes("[痍⑥냼]") || receivedStatus === "痍⑥냼?꾨즺";
+                    const isReceived = (order.received === true || receivedStatus === "?섎졊?꾨즺");
 
-                    // [수정] 미입고 기준: 스프레드시트에 써있거나, 픽업일 낮 12시 이전인 경우 (배경 색상/상태와 동기화)
+                    // [?섏젙] 誘몄엯怨?湲곗?: ?ㅽ봽?덈뱶?쒗듃???⑥엳嫄곕굹, ?쎌뾽????12???댁쟾??寃쎌슦 (諛곌꼍 ?됱긽/?곹깭? ?숆린??
                     const pDate_notify = parseKRDate(order.pickupDate);
                     const cutoff_notify = new Date(pDate_notify);
                     cutoff_notify.setHours(12, 0, 0, 0);
                     const isDynNotStocked = (new Date() < cutoff_notify) && !isReceived && !isCanceled;
-                    const isNotStocked = (receivedStatus === "미입고") || isDynNotStocked;
+                    const isNotStocked = (receivedStatus === "誘몄엯怨?) || isDynNotStocked;
 
                     const result = !isReceived && !isCanceled && !isNotStocked && isTodayOrPast;
                     if (result) {
-                        console.log(`[미픽업 판별] 상품: ${itemName}, 날짜: ${order.pickupDate}, 상태: ${receivedStatus} -> 알림 대상`);
+                        console.log(`[誘명뵿???먮퀎] ?곹뭹: ${itemName}, ?좎쭨: ${order.pickupDate}, ?곹깭: ${receivedStatus} -> ?뚮┝ ???);
                     }
                     return result;
                 });
 
-                console.log("[미픽업 확인] 최종 미픽업 항목 수:", unpickedItems.length);
+                console.log("[誘명뵿???뺤씤] 理쒖쥌 誘명뵿????ぉ ??", unpickedItems.length);
 
                 if (unpickedItems.length > 0) {
-                    console.log("[미픽업 확인] 알림 모달을 띄웁니다.");
+                    console.log("[誘명뵿???뺤씤] ?뚮┝ 紐⑤떖???꾩썎?덈떎.");
                     const styledName = `<span class="name-badge" style="margin-right:0;">${name}</span>`;
-                    showSystemModal(`반갑습니다, ${styledName}님!<div style="margin-bottom:5px;"></div>아직 픽업하지 않은 상품이 있습니다.<br>주문내역을 확인 해 주세요.`, 'alert');
+                    showSystemModal(`諛섍컩?듬땲?? ${styledName}??<div style="margin-bottom:5px;"></div>?꾩쭅 ?쎌뾽?섏? ?딆? ?곹뭹???덉뒿?덈떎.<br>二쇰Ц?댁뿭???뺤씤 ??二쇱꽭??`, 'alert');
                 }
             } catch (e) {
-                console.error("[미픽업 확인] 실행 도중 오류 발생:", e);
+                console.error("[誘명뵿???뺤씤] ?ㅽ뻾 ?꾩쨷 ?ㅻ쪟 諛쒖깮:", e);
             }
         }
 
-        let fullHistoryData = []; // 서버에서 가져온 전체 데이터 저장
-        let currentSortBy = 'pickupDate'; // 'pickupDate' (픽업일) 기본값
-        let currentSortDir = 'asc'; // 픽업일 기준은 오름차순(오늘->미래)이 기본
-        let currentFilter = 'today'; // '오늘' 기본값
-        let currentStatusFilter = 'order'; // '주문' 기본값 (하위분류)
+        let fullHistoryData = []; // ?쒕쾭?먯꽌 媛?몄삩 ?꾩껜 ?곗씠?????
+        let currentSortBy = 'pickupDate'; // 'pickupDate' (?쎌뾽?? 湲곕낯媛?
+        let currentSortDir = 'asc'; // ?쎌뾽??湲곗?? ?ㅻ쫫李⑥닚(?ㅻ뒛->誘몃옒)??湲곕낯
+        let currentFilter = 'today'; // '?ㅻ뒛' 湲곕낯媛?
+        let currentStatusFilter = 'order'; // '二쇰Ц' 湲곕낯媛?(?섏쐞遺꾨쪟)
 
         function toggleSortDir() {
             currentSortDir = (currentSortDir === 'desc') ? 'asc' : 'desc';
@@ -1487,15 +1487,15 @@
 
         let currentHistoryLimit = 10;
 
-        // [추가] 데이터 전체 새로고침 (헤더 클릭 시)
+        // [異붽?] ?곗씠???꾩껜 ?덈줈怨좎묠 (?ㅻ뜑 ?대┃ ??
         function refreshAllData() {
-            // 1. 주문내역 캐시 삭제 (다음 조회 시 서버에서 가져오도록 유도)
-            const name = (localStorage.getItem('moket_user_name') || "").trim();
-            const phone = (localStorage.getItem('moket_user_phone') || "").trim();
+            // 1. 二쇰Ц?댁뿭 罹먯떆 ??젣 (?ㅼ쓬 議고쉶 ???쒕쾭?먯꽌 媛?몄삤?꾨줉 ?좊룄)
+            const name = (localStorage.getItem('gonggu_user_name') || "").trim();
+            const phone = (localStorage.getItem('gonggu_user_phone') || "").trim();
             if (name && phone) {
                 localStorage.removeItem(`history_cache_${name}_${phone}`);
             }
-            // 2. 재고 데이터 새로고침
+            // 2. ?ш퀬 ?곗씠???덈줈怨좎묠
             loadData(true);
         }
 
@@ -1504,18 +1504,18 @@
             const phone = document.getElementById('input-phone').value;
 
             if (!name || !phone) {
-                showSystemModal("주문자명과 연락처를 입력해주세요.", 'alert');
+                showSystemModal("二쇰Ц?먮챸怨??곕씫泥섎? ?낅젰?댁＜?몄슂.", 'alert');
                 return;
             }
 
-            // [수정] 모달을 열 때마다 기본값으로 초기화 (입고-오늘-픽업순 내림차순)
+            // [?섏젙] 紐⑤떖?????뚮쭏??湲곕낯媛믪쑝濡?珥덇린??(?낃퀬-?ㅻ뒛-?쎌뾽???대┝李⑥닚)
             currentSortBy = 'pickupDate';
             currentFilter = 'today';
             currentStatusFilter = 'stocked';
-            currentSortDir = 'desc'; // 최신순(내림차순)으로 초기화
-            currentHistoryLimit = 10; // 초기화
+            currentSortDir = 'desc'; // 理쒖떊???대┝李⑥닚)?쇰줈 珥덇린??
+            currentHistoryLimit = 10; // 珥덇린??
 
-            // 버튼 UI 초기화
+            // 踰꾪듉 UI 珥덇린??
             document.getElementById('btn-sort-order').classList.remove('active');
             document.getElementById('btn-sort-pickup').classList.add('active');
             document.getElementById('filter-all').classList.remove('active');
@@ -1523,7 +1523,7 @@
             document.getElementById('filter-week').classList.remove('active');
             document.getElementById('filter-month').classList.remove('active');
 
-            // 하위 분류 버튼 초기화
+            // ?섏쐞 遺꾨쪟 踰꾪듉 珥덇린??
             document.getElementById('status-order').classList.remove('active');
             document.getElementById('status-cancel').classList.remove('active');
             document.getElementById('status-stocked').classList.add('active');
@@ -1533,29 +1533,29 @@
             const list = document.getElementById('history-list');
             const title = document.getElementById('history-modal-title');
 
-            // 타이틀 동적 변경 (상단 여백 확보, 이름표 오렌지색)
-            const displayName = name.trim() || "주문자";
+            // ??댄? ?숈쟻 蹂寃?(?곷떒 ?щ갚 ?뺣낫, ?대쫫???ㅻ젋吏??
+            const displayName = name.trim() || "二쇰Ц??;
             title.style.fontSize = "20px";
-            title.innerHTML = `<span style="background:#fdf2e9; color:var(--nego-orange); padding:2px 10px; border-radius:0; margin-right:5px; font-weight:900;">${displayName}</span>님의 주문내역`;
+            title.innerHTML = `<span style="background:#fdf2e9; color:var(--nego-orange); padding:2px 10px; border-radius:0; margin-right:5px; font-weight:900;">${displayName}</span>?섏쓽 二쇰Ц?댁뿭`;
 
             modal.style.display = 'flex';
             checkScrollLock();
 
-            // 1. [로컬 캐시] 이전에 불러온 내역이 있다면 즉시 표시 (사용자별 구분)
+            // 1. [濡쒖뺄 罹먯떆] ?댁쟾??遺덈윭???댁뿭???덈떎硫?利됱떆 ?쒖떆 (?ъ슜?먮퀎 援щ텇)
             const cacheKey = `history_cache_${name}_${phone}`;
-            fullHistoryData = []; // [중요] 이전 사용자의 데이터 잔상을 제거하기 위해 무조건 초기화
+            fullHistoryData = []; // [以묒슂] ?댁쟾 ?ъ슜?먯쓽 ?곗씠???붿긽???쒓굅?섍린 ?꾪빐 臾댁“嫄?珥덇린??
 
             const cached = localStorage.getItem(cacheKey);
             if (cached) {
                 fullHistoryData = JSON.parse(cached);
-                // [복구] 빠른 로딩을 위해 캐시 즉시 렌더링
+                // [蹂듦뎄] 鍮좊Ⅸ 濡쒕뵫???꾪빐 罹먯떆 利됱떆 ?뚮뜑留?
                 renderHistory();
             } else {
-                list.innerHTML = '<div style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding:50px 0; color:#999;"><div class="loading-spinner" style="margin-bottom:15px;"></div>내역을 조회 중입니다...</div>';
+                list.innerHTML = '<div style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding:50px 0; color:#999;"><div class="loading-spinner" style="margin-bottom:15px;"></div>?댁뿭??議고쉶 以묒엯?덈떎...</div>';
             }
 
             try {
-                // 2. [1단계 로딩] 오늘(최근) 내역만 빠르게 가져와서 업데이트
+                // 2. [1?④퀎 濡쒕뵫] ?ㅻ뒛(理쒓렐) ?댁뿭留?鍮좊Ⅴ寃?媛?몄????낅뜲?댄듃
                 const recentUrl = `${API_URL}?header=history&name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&scope=recent`;
                 const resRecent = await fetch(recentUrl);
                 const recentData = await resRecent.json();
@@ -1563,43 +1563,43 @@
                 if (recentData && recentData.result === 'error') throw new Error(recentData.message);
 
                 if (Array.isArray(recentData)) {
-                    // 데이터 병합 (기존 캐시와 합치거나 새로 만듦)
+                    // ?곗씠??蹂묓빀 (湲곗〈 罹먯떆? ?⑹튂嫄곕굹 ?덈줈 留뚮벀)
                     const recentKeys = new Set(recentData.map(o => (o.timestamp + (o.matchKey || "") + o.item).trim()));
                     const others = (fullHistoryData || []).filter(o => !recentKeys.has((o.timestamp + (o.matchKey || "") + o.item).trim()));
                     const newData = [...recentData, ...others];
 
-                    // [스마트 렌더링] 데이터가 변경된 경우에만 UI 갱신 (불필요한 깜빡임 방지)
+                    // [?ㅻ쭏???뚮뜑留? ?곗씠?곌? 蹂寃쎈맂 寃쎌슦?먮쭔 UI 媛깆떊 (遺덊븘?뷀븳 源쒕묀??諛⑹?)
                     if (JSON.stringify(newData) !== JSON.stringify(fullHistoryData)) {
                         fullHistoryData = newData;
                         renderHistory();
                     }
                 }
 
-                // 3. [2단계 로딩] 전체 내역 배경에서 천천히 가져오기
+                // 3. [2?④퀎 濡쒕뵫] ?꾩껜 ?댁뿭 諛곌꼍?먯꽌 泥쒖쿇??媛?몄삤湲?
                 const allUrl = `${API_URL}?header=history&name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&scope=all`;
                 fetch(allUrl).then(res => res.json()).then(allData => {
                     if (Array.isArray(allData)) {
-                        // [스마트 렌더링] 전체 데이터도 변경점이 있을 때만 갱신
+                        // [?ㅻ쭏???뚮뜑留? ?꾩껜 ?곗씠?곕룄 蹂寃쎌젏???덉쓣 ?뚮쭔 媛깆떊
                         const isChanged = JSON.stringify(allData) !== JSON.stringify(fullHistoryData);
                         fullHistoryData = allData;
                         localStorage.setItem(cacheKey, JSON.stringify(fullHistoryData));
 
                         if (isChanged) renderHistory();
                     }
-                }).catch(err => console.error("전체 내역 로드 실패:", err));
+                }).catch(err => console.error("?꾩껜 ?댁뿭 濡쒕뱶 ?ㅽ뙣:", err));
 
             } catch (e) {
-                console.error("역사 로드 실패:", e);
+                console.error("??궗 濡쒕뱶 ?ㅽ뙣:", e);
                 if (!fullHistoryData || fullHistoryData.length === 0) {
-                    list.innerHTML = `<div style="text-align:center; color:#ff4d4d; padding:20px; font-size:0.9rem;">🚫 조회 중 오류 발생<br><br><span style="color:#455464;font-size:0.8rem;">${e.message || "연결 상태를 확인해 주세요."}</span></div>`;
+                    list.innerHTML = `<div style="text-align:center; color:#ff4d4d; padding:20px; font-size:0.9rem;">?슟 議고쉶 以??ㅻ쪟 諛쒖깮<br><br><span style="color:#455464;font-size:0.8rem;">${e.message || "?곌껐 ?곹깭瑜??뺤씤??二쇱꽭??"}</span></div>`;
                 }
             }
         }
 
         function changeSortMode(mode) {
             currentSortBy = mode;
-            currentHistoryLimit = 10; // 초기화
-            // 모드 변경 시 적절한 기본 정렬 방향 설정
+            currentHistoryLimit = 10; // 珥덇린??
+            // 紐⑤뱶 蹂寃????곸젅??湲곕낯 ?뺣젹 諛⑺뼢 ?ㅼ젙
             currentSortDir = 'desc';
 
             document.getElementById('btn-sort-order').classList.toggle('active', mode === 'timestamp');
@@ -1609,9 +1609,9 @@
 
         function filterHistory(type) {
             currentFilter = type;
-            currentHistoryLimit = 10; // 초기화
-            currentSortDir = 'desc'; // [추가] 필터 변경 시 내림차순 기본 적용
-            // 버튼 활성화 처리
+            currentHistoryLimit = 10; // 珥덇린??
+            currentSortDir = 'desc'; // [異붽?] ?꾪꽣 蹂寃????대┝李⑥닚 湲곕낯 ?곸슜
+            // 踰꾪듉 ?쒖꽦??泥섎━
             const buttons = ['all', 'today', 'week', 'month'];
             buttons.forEach(b => {
                 const btn = document.getElementById('filter-' + b);
@@ -1622,9 +1622,9 @@
 
         function filterStatus(status) {
             currentStatusFilter = status;
-            currentHistoryLimit = 10; // 초기화
-            currentSortDir = 'desc'; // [추가] 상태 변경 시 내림차순 기본 적용
-            // 버튼 활성화 처리
+            currentHistoryLimit = 10; // 珥덇린??
+            currentSortDir = 'desc'; // [異붽?] ?곹깭 蹂寃????대┝李⑥닚 湲곕낯 ?곸슜
+            // 踰꾪듉 ?쒖꽦??泥섎━
             const statuses = ['order', 'cancel', 'stocked', 'pickup'];
             statuses.forEach(s => {
                 const btn = document.getElementById('status-' + s);
@@ -1637,7 +1637,7 @@
             const list = document.getElementById('history-list');
             list.innerHTML = '';
 
-            // [추가] 정렬 방향 버튼 UI 업데이트 (커스텀 SVG 적용)
+            // [異붽?] ?뺣젹 諛⑺뼢 踰꾪듉 UI ?낅뜲?댄듃 (而ㅼ뒪? SVG ?곸슜)
             const sortDirBtn = document.getElementById('btn-sort-dir');
             if (sortDirBtn) {
                 if (currentSortDir === 'desc') {
@@ -1648,24 +1648,24 @@
             }
 
             if (!fullHistoryData || fullHistoryData.length === 0) {
-                list.innerHTML = '<div style="text-align:center; color:#455464; padding:50px 0;">주문내역이 없습니다.</div>';
+                list.innerHTML = '<div style="text-align:center; color:#455464; padding:50px 0;">二쇰Ц?댁뿭???놁뒿?덈떎.</div>';
                 return;
             }
 
             const now = new Date();
             const filtered = fullHistoryData.filter(item => {
-                const isCancelled = (item.item && item.item.includes('[취소]')) ||
-                    (item.received === "canceled" || item.received === "취소완료");
+                const isCancelled = (item.item && item.item.includes('[痍⑥냼]')) ||
+                    (item.received === "canceled" || item.received === "痍⑥냼?꾨즺");
                 const isReceived = (item.received === true || item.received === "TRUE");
 
-                // [하위 분류 필터 적용]
+                // [?섏쐞 遺꾨쪟 ?꾪꽣 ?곸슜]
                 if (currentStatusFilter === 'order') {
-                    // '전체' 탭: 취소된 항목도 모두 포함 (기존 필터 로직 제거)
+                    // '?꾩껜' ?? 痍⑥냼????ぉ??紐⑤몢 ?ы븿 (湲곗〈 ?꾪꽣 濡쒖쭅 ?쒓굅)
                 } else if (currentStatusFilter === 'cancel') {
                     if (!isCancelled) return false;
                 } else if (currentStatusFilter === 'stocked') {
                     if (isCancelled || isReceived) return false;
-                    // 입고 탭에서는 오늘 24시 이후 주문건은 제외 (기본 정책)
+                    // ?낃퀬 ??뿉?쒕뒗 ?ㅻ뒛 24???댄썑 二쇰Ц嫄댁? ?쒖쇅 (湲곕낯 ?뺤콉)
                     const orderDate = parseKRDate(item.timestamp);
                     const todayEnd = new Date(); todayEnd.setHours(23, 59, 59, 999);
                     if (orderDate > todayEnd) return false;
@@ -1673,13 +1673,13 @@
                     if (!isReceived || isCancelled) return false;
                 }
 
-                // [기간 필터 적용]
+                // [湲곌컙 ?꾪꽣 ?곸슜]
                 const orderDate = parseKRDate(item.timestamp);
                 const isSameDay = (d1, d2) => d1.getFullYear() === d2.getFullYear() && d1.getMonth() === d2.getMonth() && d1.getDate() === d2.getDate();
 
-                // 1. '오늘' 필터
+                // 1. '?ㅻ뒛' ?꾪꽣
                 if (currentFilter === 'today') {
-                    // [수정] '입고' 또는 '픽업' 탭일 때는 '픽업일' 기준 (지금 시간 이전인 건만), 그 외엔 '주문일' 기준
+                    // [?섏젙] '?낃퀬' ?먮뒗 '?쎌뾽' ??씪 ?뚮뒗 '?쎌뾽?? 湲곗? (吏湲??쒓컙 ?댁쟾??嫄대쭔), 洹??몄뿏 '二쇰Ц?? 湲곗?
                     if (currentStatusFilter === 'stocked' || currentStatusFilter === 'pickup') {
                         const pDate = parseKRDate(item.pickupDate);
                         return pDate <= now;
@@ -1687,31 +1687,31 @@
                     return isSameDay(now, orderDate);
                 }
 
-                // 2. 1주일/1개월 필터: 정렬 기준과 무관하게 '주문일' 기준
+                // 2. 1二쇱씪/1媛쒖썡 ?꾪꽣: ?뺣젹 湲곗?怨?臾닿??섍쾶 '二쇰Ц?? 湲곗?
                 const diffDays = (now - orderDate) / (1000 * 60 * 60 * 24);
                 if (currentFilter === 'week') return diffDays >= 0 && diffDays <= 7;
                 if (currentFilter === 'month') return diffDays >= 0 && diffDays <= 30;
 
-                // 3. '전체' 필터
+                // 3. '?꾩껜' ?꾪꽣
                 if (currentFilter === 'all') return true;
 
                 return false;
             });
 
             if (filtered.length === 0) {
-                list.innerHTML = '<div style="text-align:center; color:#455464; padding:50px 0;">해당 기간의 내역이 없습니다.</div>';
+                list.innerHTML = '<div style="text-align:center; color:#455464; padding:50px 0;">?대떦 湲곌컙???댁뿭???놁뒿?덈떎.</div>';
                 return;
             }
 
-            // 정렬 로직 (취소된 항목은 무조건 최하단으로 보내지만, 전체 기간 + 전체 상태 필터일 때는 날짜순으로만 정렬)
+            // ?뺣젹 濡쒖쭅 (痍⑥냼????ぉ? 臾댁“嫄?理쒗븯?⑥쑝濡?蹂대궡吏留? ?꾩껜 湲곌컙 + ?꾩껜 ?곹깭 ?꾪꽣???뚮뒗 ?좎쭨?쒖쑝濡쒕쭔 ?뺣젹)
             filtered.sort((a, b) => {
-                const isACancelled = (a.item && a.item.includes('[취소]')) || (a.note && a.note.includes('[취소]'));
-                const isBCancelled = (b.item && b.item.includes('[취소]')) || (b.note && b.note.includes('[취소]'));
+                const isACancelled = (a.item && a.item.includes('[痍⑥냼]')) || (a.note && a.note.includes('[痍⑥냼]'));
+                const isBCancelled = (b.item && b.item.includes('[痍⑥냼]')) || (b.note && b.note.includes('[痍⑥냼]'));
 
-                // [수정] '전체-전체' 필터일 때는 취소 그룹화 무시
+                // [?섏젙] '?꾩껜-?꾩껜' ?꾪꽣???뚮뒗 痍⑥냼 洹몃９??臾댁떆
                 if (!(currentStatusFilter === 'order' && currentFilter === 'all')) {
                     if (isACancelled !== isBCancelled) {
-                        return isACancelled ? 1 : -1; // 취소된 건을 뒤로(1) 보냄
+                        return isACancelled ? 1 : -1; // 痍⑥냼??嫄댁쓣 ?ㅻ줈(1) 蹂대깂
                     }
                 }
 
@@ -1722,32 +1722,32 @@
                     return currentSortDir === 'desc' ? valB - valA : valA - valB;
                 }
 
-                // [추가] 보조 정렬: 메인 기준이 동일할 경우 항상 '주문시간(timestamp)' 내림차순(최신순)으로 정렬
+                // [異붽?] 蹂댁“ ?뺣젹: 硫붿씤 湲곗????숈씪??寃쎌슦 ??긽 '二쇰Ц?쒓컙(timestamp)' ?대┝李⑥닚(理쒖떊???쇰줈 ?뺣젹
                 const timeA = parseKRDate(a.timestamp);
                 const timeB = parseKRDate(b.timestamp);
                 return timeB - timeA;
             });
 
-            // [더보기 기능] 현재 limit만큼만 보여줌
+            // [?붾낫湲?湲곕뒫] ?꾩옱 limit留뚰겮留?蹂댁뿬以?
             const pagedItems = filtered.slice(0, currentHistoryLimit);
             let htmlBuffer = '';
 
             pagedItems.forEach(order => {
-                const isCancelled = (order.item && order.item.includes('[취소]')) ||
-                    (order.note && order.note.includes('[취소]')) ||
+                const isCancelled = (order.item && order.item.includes('[痍⑥냼]')) ||
+                    (order.note && order.note.includes('[痍⑥냼]')) ||
                     order.received === "canceled" ||
-                    order.received === "취소완료";
+                    order.received === "痍⑥냼?꾨즺";
                 const isProcessing = order.isProcessing === true;
 
-                // [안전장치] 데이터 형식이 예전과 다를 경우(예: timestamp가 없는 경우)를 보호
-                let orderTime = '정보없음';
+                // [?덉쟾?μ튂] ?곗씠???뺤떇???덉쟾怨??ㅻ? 寃쎌슦(?? timestamp媛 ?녿뒗 寃쎌슦)瑜?蹂댄샇
+                let orderTime = '?뺣낫?놁쓬';
                 let orderTimeFull = '';
                 try {
                     orderTimeFull = order.timestamp || '';
-                    orderTime = String(orderTimeFull).replace(/^20(\d{2}년)/, '$1').replace(/[\s\n]+\d{2}:\d{2}:\d{2}$/, '');
-                } catch (e) { console.error("날짜 형식 도중 오류:", e, order); }
+                    orderTime = String(orderTimeFull).replace(/^20(\d{2}??/, '$1').replace(/[\s\n]+\d{2}:\d{2}:\d{2}$/, '');
+                } catch (e) { console.error("?좎쭨 ?뺤떇 ?꾩쨷 ?ㅻ쪟:", e, order); }
                 const isReceived = (order.received === true || order.received === "TRUE");
-                const pickupDisp = (order.pickupDate || '정보없음').replace(/^20(\d{2}년)/, '$1');
+                const pickupDisp = (order.pickupDate || '?뺣낫?놁쓬').replace(/^20(\d{2}??/, '$1');
 
                 const orderDateStyle = currentSortBy === 'timestamp' ? 'color:var(--nego-orange); font-weight:700;' : 'color:#455464;';
                 const pickupDateStyle = currentSortBy === 'pickupDate' ? 'color:var(--nego-orange); font-weight:700;' : 'color:#455464;';
@@ -1755,7 +1755,7 @@
                 const isOrderToday = parseKRDate(orderTimeFull).toDateString() === new Date().toDateString();
                 const canDelete = isOrderToday && !isCancelled && !isReceived && !isProcessing;
 
-                let statusText = isReceived ? '픽업완료' : (isCancelled ? '취소완료' : '입고완료');
+                let statusText = isReceived ? '?쎌뾽?꾨즺' : (isCancelled ? '痍⑥냼?꾨즺' : '?낃퀬?꾨즺');
                 let statusColor = isReceived ? '#4CAF50' : (isCancelled ? '#999' : '#FF6D00');
 
                 if (!isReceived && !isCancelled && !isProcessing) {
@@ -1763,13 +1763,13 @@
                     const cutoff = new Date(pDate);
                     cutoff.setHours(12, 0, 0, 0);
                     if (new Date() < cutoff) {
-                        statusText = '미입고';
+                        statusText = '誘몄엯怨?;
                         statusColor = '#999';
                     }
                 }
 
                 if (isProcessing) {
-                    statusText = '취소중...';
+                    statusText = '痍⑥냼以?..';
                     statusColor = '#666';
                 }
 
@@ -1779,27 +1779,27 @@
                             <div style="flex:1; padding-right:10px;">
                                 <div style="font-size:16px; font-weight:800; color:var(--item-black); line-height:1.2; margin-bottom:6px;">${order.item}</div>
                                 <div style="font-size:12px; display:flex; flex-direction:column; gap:2px;">
-                                    <div style="${orderDateStyle}">주문일: ${orderTime}</div>
-                                    <div style="${pickupDateStyle}">픽업일: ${pickupDisp}</div>
+                                    <div style="${orderDateStyle}">二쇰Ц?? ${orderTime}</div>
+                                    <div style="${pickupDateStyle}">?쎌뾽?? ${pickupDisp}</div>
                                 </div>
                             </div>
                             <div style="text-align:right; min-width:90px; display:flex; flex-direction:column; align-items:flex-end; gap:6px;">
-                                <div style="font-size:13px; color:#455464; font-weight:700;">${order.qty}개 / ${String(order.total || 0).includes(',') ? order.total : parseInt(order.total || 0).toLocaleString()}원</div>
-                                ${order.onSite ? `<div style="font-size:16px; font-weight:800; color:#999; margin-bottom:-2px;">현장판매</div>` : `<div style="font-size:16px; font-weight:800; color:${statusColor};">${statusText}</div>`}
+                                <div style="font-size:13px; color:#455464; font-weight:700;">${order.qty}媛?/ ${String(order.total || 0).includes(',') ? order.total : parseInt(order.total || 0).toLocaleString()}??/div>
+                                ${order.onSite ? `<div style="font-size:16px; font-weight:800; color:#999; margin-bottom:-2px;">?꾩옣?먮ℓ</div>` : `<div style="font-size:16px; font-weight:800; color:${statusColor};">${statusText}</div>`}
                                 ${canDelete ? `<button onclick="deleteOrderServer('${orderTimeFull}', '${order.name}', '${order.item}', '${order.pickupDate}', '${order.matchKey || ''}')" 
-                                     style="margin-top:4px; width:100%; height:28px; background:#eff2f5; color:#666; border:none; border-radius:0; font-size:13px; font-weight:700; cursor:pointer;">주문취소</button>` : ''}
-                                 ${isProcessing ? `<div style="margin-top:4px; width:100%; height:28px; display:flex; align-items:center; justify-content:center; background:#f5f5f5; color:#999; border-radius:0; font-size:13px; font-weight:700;">취소중</div>` : ''}
+                                     style="margin-top:4px; width:100%; height:28px; background:#eff2f5; color:#666; border:none; border-radius:0; font-size:13px; font-weight:700; cursor:pointer;">二쇰Ц痍⑥냼</button>` : ''}
+                                 ${isProcessing ? `<div style="margin-top:4px; width:100%; height:28px; display:flex; align-items:center; justify-content:center; background:#f5f5f5; color:#999; border-radius:0; font-size:13px; font-weight:700;">痍⑥냼以?/div>` : ''}
                             </div>
                         </div>
                     </div>
                 `;
             });
 
-            // 더보기 버튼 추가
+            // ?붾낫湲?踰꾪듉 異붽?
             if (filtered.length > currentHistoryLimit) {
                 htmlBuffer += `
                     <div style="text-align:center; padding:20px 0;">
-                        <button onclick="loadMoreHistory()" style="background:#f5f5f5; border:none; border-radius:30px; padding:10px 25px; font-weight:800; color:#555; cursor:pointer;">더보기 +</button>
+                        <button onclick="loadMoreHistory()" style="background:#f5f5f5; border:none; border-radius:30px; padding:10px 25px; font-weight:800; color:#555; cursor:pointer;">?붾낫湲?+</button>
                     </div>
                 `;
             }
@@ -1813,28 +1813,28 @@
         }
 
         async function deleteOrderServer(timestamp, name, item, pickupDate, matchKey) {
-            // [추가] 중복 취소 방지 체크
+            // [異붽?] 以묐났 痍⑥냼 諛⑹? 泥댄겕
             if (isHistoryProcessing) {
-                showSystemModal("이전 주문 취소 처리중입니다.\n잠시만 기다려 주세요.", 'alert');
+                showSystemModal("?댁쟾 二쇰Ц 痍⑥냼 泥섎━以묒엯?덈떎.\n?좎떆留?湲곕떎??二쇱꽭??", 'alert');
                 return;
             }
 
             const displayItem = item.replace(/['"]/g, '');
-            showSystemModal(`[${displayItem}]\n주문을 취소하시겠습니까?`, 'confirm', async (btnYes, btnNo) => {
-                // 한 번 더 체크 (모달 떠있는 동안 다른 취소가 시작되었을 수 있음)
+            showSystemModal(`[${displayItem}]\n二쇰Ц??痍⑥냼?섏떆寃좎뒿?덇퉴?`, 'confirm', async (btnYes, btnNo) => {
+                // ??踰???泥댄겕 (紐⑤떖 ?좎엳???숈븞 ?ㅻⅨ 痍⑥냼媛 ?쒖옉?섏뿀?????덉쓬)
                 if (isHistoryProcessing) {
-                    showSystemModal("이전 주문 취소 처리중입니다.\n잠시만 기다려 주세요.", 'alert');
+                    showSystemModal("?댁쟾 二쇰Ц 痍⑥냼 泥섎━以묒엯?덈떎.\n?좎떆留?湲곕떎??二쇱꽭??", 'alert');
                     return;
                 }
 
                 document.getElementById('system-modal').style.display = 'none';
                 checkScrollLock();
 
-                // 1. 상태 전이: 처리 중으로 변경
-                isHistoryProcessing = true; // [추가] 글로벌 플래그 설정
+                // 1. ?곹깭 ?꾩씠: 泥섎━ 以묒쑝濡?蹂寃?
+                isHistoryProcessing = true; // [異붽?] 湲濡쒕쾶 ?뚮옒洹??ㅼ젙
                 const targetIdx = fullHistoryData.findIndex(d =>
                     String(d.timestamp).trim() === String(timestamp).trim() &&
-                    String(d.matchKey || "").trim() === String(matchKey || "").trim() && // matchKey 비교 수정
+                    String(d.matchKey || "").trim() === String(matchKey || "").trim() && // matchKey 鍮꾧탳 ?섏젙
                     String(d.item).replace(/['"]/g, '').trim() === String(item).replace(/['"]/g, '').trim()
                 );
 
@@ -1849,39 +1849,39 @@
                     name: String(name).trim(),
                     item: String(item).trim(),
                     pickupDate: String(pickupDate).trim(),
-                    matchKey: String(matchKey || "").trim() // matchKey 전송
+                    matchKey: String(matchKey || "").trim() // matchKey ?꾩넚
                 };
 
                 fetch(API_URL, { method: 'POST', body: JSON.stringify(payload) })
                     .then(res => res.json())
                     .then(result => {
-                        isHistoryProcessing = false; // [추가] 완료 시 해제
+                        isHistoryProcessing = false; // [異붽?] ?꾨즺 ???댁젣
                         const updatedIdx = fullHistoryData.findIndex(d =>
                             String(d.timestamp).trim() === String(timestamp).trim() &&
-                            String(d.matchKey || "").trim() === String(matchKey || "").trim() && // matchKey 비교 추가
+                            String(d.matchKey || "").trim() === String(matchKey || "").trim() && // matchKey 鍮꾧탳 異붽?
                             String(d.item).replace(/['"]/g, '').trim() === String(item).replace(/['"]/g, '').trim()
                         );
 
                         if (result.result === 'success') {
                             if (updatedIdx !== -1) {
-                                // 2. 서버 성공 후 취소 상태로 확정
-                                if (!fullHistoryData[updatedIdx].item.includes('[취소]')) {
-                                    fullHistoryData[updatedIdx].item = "[취소] " + fullHistoryData[updatedIdx].item;
+                                // 2. ?쒕쾭 ?깃났 ??痍⑥냼 ?곹깭濡??뺤젙
+                                if (!fullHistoryData[updatedIdx].item.includes('[痍⑥냼]')) {
+                                    fullHistoryData[updatedIdx].item = "[痍⑥냼] " + fullHistoryData[updatedIdx].item;
                                 }
-                                fullHistoryData[updatedIdx].received = "취소완료";
+                                fullHistoryData[updatedIdx].received = "痍⑥냼?꾨즺";
                                 fullHistoryData[updatedIdx].isProcessing = false;
 
-                                // 로컬 캐시 즉시 업데이트 (사용자별)
+                                // 濡쒖뺄 罹먯떆 利됱떆 ?낅뜲?댄듃 (?ъ슜?먮퀎)
                                 const name = document.getElementById('input-name').value;
                                 const phone = document.getElementById('input-phone').value;
                                 const cacheKey = `history_cache_${name}_${phone}`;
                                 localStorage.setItem(cacheKey, JSON.stringify(fullHistoryData));
 
-                                // 로컬 재고 복구 (서버는 이미 완료되었으므로 시각적 업데이트)
+                                // 濡쒖뺄 ?ш퀬 蹂듦뎄 (?쒕쾭???대? ?꾨즺?섏뿀?쇰?濡??쒓컖???낅뜲?댄듃)
                                 const mKey = matchKey || "no-date";
                                 const itemKey = mKey + "|" + String(item).replace(/['"]/g, '').trim();
 
-                                // 이름과 matchKey(또는 픽업일)로 상품 찾기
+                                // ?대쫫怨?matchKey(?먮뒗 ?쎌뾽??濡??곹뭹 李얘린
                                 const p = productsData.find(pd =>
                                     pd.name === String(item).replace(/['"]/g, '').trim() &&
                                     (pd.matchKey === mKey || pd.displayDate === String(pickupDate).trim())
@@ -1889,35 +1889,35 @@
 
                                 if (p) {
                                     p.stock = parseInt(p.stock || 0) + (parseInt(fullHistoryData[updatedIdx].qty) || 1);
-                                    // [상태 잠금] 15초 동안 이 수량을 보호 (loadData가 덮어쓰지 못하도록)
+                                    // [?곹깭 ?좉툑] 15珥??숈븞 ???섎웾??蹂댄샇 (loadData媛 ??뼱?곗? 紐삵븯?꾨줉)
                                     pendingStockUpdates[itemKey] = {
                                         stock: p.stock,
                                         expire: Date.now() + STOCK_LOCK_DURATION
                                     };
 
-                                    // 만약 예전 주문으로 인한 다른 형태의 키가 있다면 그것도 업데이트/삭제하여 덮어쓰기 방지
+                                    // 留뚯빟 ?덉쟾 二쇰Ц?쇰줈 ?명븳 ?ㅻⅨ ?뺥깭???ㅺ? ?덈떎硫?洹멸쾬???낅뜲?댄듃/??젣?섏뿬 ??뼱?곌린 諛⑹?
                                     const altKey = (mKey === "no-date" ? "" : "no-date") + "|" + p.name;
                                     if (pendingStockUpdates[altKey]) delete pendingStockUpdates[altKey];
 
-                                    // [UI 갱신] 변경된 재고 데이터로 메인 리스트 즉시 다시 그리기
+                                    // [UI 媛깆떊] 蹂寃쎈맂 ?ш퀬 ?곗씠?곕줈 硫붿씤 由ъ뒪??利됱떆 ?ㅼ떆 洹몃━湲?
                                     const activeBtn = document.querySelector('.date-btn.active');
                                     if (activeBtn) renderList(activeBtn.dataset.date);
                                 }
                             }
-                            showSystemModal("주문이 취소되었습니다.", 'alert');
+                            showSystemModal("二쇰Ц??痍⑥냼?섏뿀?듬땲??", 'alert');
                             renderHistory();
-                            setTimeout(() => loadData(), 2000); // 실제 데이터 싱크
+                            setTimeout(() => loadData(), 2000); // ?ㅼ젣 ?곗씠???깊겕
                         } else {
                             if (updatedIdx !== -1) fullHistoryData[updatedIdx].isProcessing = false;
                             renderHistory();
-                            showSystemModal("취소에 실패했습니다.잠시 후 다시 시도해 주세요.", 'alert');
+                            showSystemModal("痍⑥냼???ㅽ뙣?덉뒿?덈떎.?좎떆 ???ㅼ떆 ?쒕룄??二쇱꽭??", 'alert');
                         }
                     })
                     .catch(e => {
-                        isHistoryProcessing = false; // [추가] 에러 시 해제
+                        isHistoryProcessing = false; // [異붽?] ?먮윭 ???댁젣
                         const errIdx = fullHistoryData.findIndex(d =>
                             String(d.timestamp).trim() === String(timestamp).trim() &&
-                            String(d.matchKey || "").trim() === String(matchKey || "").trim() && // matchKey 비교 추가
+                            String(d.matchKey || "").trim() === String(matchKey || "").trim() && // matchKey 鍮꾧탳 異붽?
                             String(d.item).replace(/['"]/g, '').trim() === String(item).replace(/['"]/g, '').trim()
                         );
                         if (errIdx !== -1) fullHistoryData[errIdx].isProcessing = false;
@@ -1929,22 +1929,22 @@
             });
         }
 
-        // [날짜] 요일 표시 로직
+        // [?좎쭨] ?붿씪 ?쒖떆 濡쒖쭅
         function formatDateWithDay(input) {
             const d = new Date(input);
             if (isNaN(d.getTime())) return input;
-            const week = ['일',
-                '월',
-                '화',
-                '수',
-                '목',
-                '금',
-                '토'];
+            const week = ['??,
+                '??,
+                '??,
+                '??,
+                '紐?,
+                '湲?,
+                '??];
 
-            return `${d.getMonth() + 1}월${d.getDate()}일(${week[d.getDay()]})`;
+            return `${d.getMonth() + 1}??{d.getDate()}??${week[d.getDay()]})`;
         }
 
-        // [이미지 캐시] 브라우저 기본 캐시 활용 (Preloading)
+        // [?대?吏 罹먯떆] 釉뚮씪?곗? 湲곕낯 罹먯떆 ?쒖슜 (Preloading)
         function getImgUrl(input, size = 1000) {
             if (!input) return '';
             let id = input.toString().trim();
@@ -1954,16 +1954,16 @@
             return `https://drive.google.com/thumbnail?id=${id}&sz=w${size}`;
         }
 
-        // [이미지] 배경에서 브라우저 캐시에 미리 저장 (CORS 문제 해결)
+        // [?대?吏] 諛곌꼍?먯꽌 釉뚮씪?곗? 罹먯떆??誘몃━ ???(CORS 臾몄젣 ?닿껐)
         function startImageCaching(data) {
             if (!data || data.length === 0) return;
 
-            console.log("이미지 프리로딩(브라우저 캐시) 시작...");
+            console.log("?대?吏 ?꾨━濡쒕뵫(釉뚮씪?곗? 罹먯떆) ?쒖옉...");
             data.forEach(p => {
                 if (p.images && p.images[0]) {
                     const url = getImgUrl(p.images[0], 300);
                     const img = new Image();
-                    img.src = url; // 단순히 src에 대입하면 브라우저가 알아서 캐싱함
+                    img.src = url; // ?⑥닚??src????낇븯硫?釉뚮씪?곗?媛 ?뚯븘??罹먯떛??
                 }
             });
         }
@@ -1971,44 +1971,44 @@
         async function loadData(force = false) {
             const productArea = document.getElementById('product-list');
 
-            // [상태 잠금 강제 해제] 수동 새로고침 시에는 모든 잠금을 풀고 서버 데이터를 신뢰함
+            // [?곹깭 ?좉툑 媛뺤젣 ?댁젣] ?섎룞 ?덈줈怨좎묠 ?쒖뿉??紐⑤뱺 ?좉툑???怨??쒕쾭 ?곗씠?곕? ?좊ː??
             if (force) {
                 pendingStockUpdates = {};
-                console.log("새로고침: 모든 재고 잠금을 해제합니다.");
+                console.log("?덈줈怨좎묠: 紐⑤뱺 ?ш퀬 ?좉툑???댁젣?⑸땲??");
             }
 
-            // 1. [로컬 캐시] 메모리에 데이터가 없을 때만 즉시 렌더링 (깜빡임 최소화)
+            // 1. [濡쒖뺄 罹먯떆] 硫붾え由ъ뿉 ?곗씠?곌? ?놁쓣 ?뚮쭔 利됱떆 ?뚮뜑留?(源쒕묀??理쒖냼??
             if (productsData.length === 0) {
-                const cachedData = localStorage.getItem('moket_products_cache_v2');
+                const cachedData = localStorage.getItem('gonggu_products_cache_v2');
                 if (cachedData) {
                     try {
                         productsData = JSON.parse(cachedData);
-                        console.log("로컬 캐시 데이터 즉시 표시");
+                        console.log("濡쒖뺄 罹먯떆 ?곗씠??利됱떆 ?쒖떆");
                         processAndRender(productsData);
                     } catch (e) {
-                        console.error("캐시 로드 실패:", e);
+                        console.error("罹먯떆 濡쒕뱶 ?ㅽ뙣:", e);
                     }
                 }
             }
 
-            // 데이터도 없고 캐시도 없을 때만 스켈레톤 표시
+            // ?곗씠?곕룄 ?녾퀬 罹먯떆???놁쓣 ?뚮쭔 ?ㅼ펷?덊넠 ?쒖떆
             if (productsData.length === 0) {
                 showSkeleton();
             }
 
             try {
-                // 2. [서버 호출] 배경에서 최신 데이터 가져오기 (캐시방지 타임스맷프 추가)
+                // 2. [?쒕쾭 ?몄텧] 諛곌꼍?먯꽌 理쒖떊 ?곗씠??媛?몄삤湲?(罹먯떆諛⑹? ??꾩뒪留룻봽 異붽?)
                 const fetchUrl = API_URL + (API_URL.includes('?') ? '&' : '?') + 't=' + Date.now();
                 const response = await fetch(fetchUrl);
-                if (!response.ok) throw new Error('네트워크 응답이 올바르지 않습니다.');
+                if (!response.ok) throw new Error('?ㅽ듃?뚰겕 ?묐떟???щ컮瑜댁? ?딆뒿?덈떎.');
                 const rawData = await response.json();
 
                 if (!Array.isArray(rawData)) {
                     if (rawData.result === "error") throw new Error(rawData.message);
-                    throw new Error('데이터 형식이 올바르지 않습니다.');
+                    throw new Error('?곗씠???뺤떇???щ컮瑜댁? ?딆뒿?덈떎.');
                 }
 
-                // 매핑 처리
+                // 留ㅽ븨 泥섎━
                 let freshData = rawData.map(p => ({
                     ...p,
                     name: p.name || "",
@@ -2017,7 +2017,7 @@
                     images: Array.isArray(p.images) ? p.images : []
                 })).filter(p => p.name && p.matchKey);
 
-                // [상태 잠금 적용] 최근 주문/취소된 품목 보호
+                // [?곹깭 ?좉툑 ?곸슜] 理쒓렐 二쇰Ц/痍⑥냼???덈ぉ 蹂댄샇
                 const now = Date.now();
                 for (let key in pendingStockUpdates) {
                     if (pendingStockUpdates[key].expire < now) {
@@ -2027,32 +2027,32 @@
                     const [mKey, name] = key.split("|");
                     const target = freshData.find(pd => pd.matchKey === mKey && pd.name === name);
                     if (target) {
-                        console.log(`[상태 보호] ${name} (${mKey}) 재고를 로컬 상태(${pendingStockUpdates[key].stock})로 강제 유지합니다.`);
+                        console.log(`[?곹깭 蹂댄샇] ${name} (${mKey}) ?ш퀬瑜?濡쒖뺄 ?곹깭(${pendingStockUpdates[key].stock})濡?媛뺤젣 ?좎??⑸땲??`);
                         target.stock = pendingStockUpdates[key].stock;
                     }
                 }
 
                 if (freshData.length > 0) {
-                    // 데이터가 바뀌었을 때만 렌더링 업데이트 (화면 깜빡임 방지)
+                    // ?곗씠?곌? 諛붾뚯뿀???뚮쭔 ?뚮뜑留??낅뜲?댄듃 (?붾㈃ 源쒕묀??諛⑹?)
                     if (JSON.stringify(freshData) !== JSON.stringify(productsData)) {
                         productsData = freshData;
-                        localStorage.setItem('moket_products_cache_v2', JSON.stringify(productsData));
-                        console.log("최신 데이터로 화면 업데이트");
+                        localStorage.setItem('gonggu_products_cache_v2', JSON.stringify(productsData));
+                        console.log("理쒖떊 ?곗씠?곕줈 ?붾㈃ ?낅뜲?댄듃");
                         processAndRender(productsData);
-                        // 최신 데이터로 이미지 캐싱 시작
+                        // 理쒖떊 ?곗씠?곕줈 ?대?吏 罹먯떛 ?쒖옉
                         startImageCaching(productsData);
                     } else {
-                        // 데이터가 같아도 이미지 캐싱은 체크 (빠진게 있을 수 있으니)
+                        // ?곗씠?곌? 媛숈븘???대?吏 罹먯떛? 泥댄겕 (鍮좎쭊寃??덉쓣 ???덉쑝??
                         startImageCaching(productsData);
                     }
                 }
             }
             catch (e) {
-                console.error("배경 로드 실패:", e);
-                // 캐시조차 없으면 에러 표시
+                console.error("諛곌꼍 濡쒕뱶 ?ㅽ뙣:", e);
+                // 罹먯떆議곗감 ?놁쑝硫??먮윭 ?쒖떆
                 if (!productsData || productsData.length === 0) {
                     productArea.innerHTML = `<div style="text-align:center; padding:50px 20px; color:#ff4d4d;">
-                        🚫 정보를 불러올 수 없습니다.<br>
+                        ?슟 ?뺣낫瑜?遺덈윭?????놁뒿?덈떎.<br>
                         <span style="font-size:0.8rem; color:#999;">(${e.message})</span>
                     </div>`;
                 }
@@ -2076,12 +2076,12 @@
             }
         }
 
-        // 날짜 필터 생성 및 초기 리스트 렌더링을 담당하는 공통 함수
+        // ?좎쭨 ?꾪꽣 ?앹꽦 諛?珥덇린 由ъ뒪???뚮뜑留곸쓣 ?대떦?섎뒗 怨듯넻 ?⑥닔
         function processAndRender(data) {
             const today = new Date();
             today.setHours(0, 0, 0, 0);
 
-            // 오늘 날짜 이후 데이터만 필터링
+            // ?ㅻ뒛 ?좎쭨 ?댄썑 ?곗씠?곕쭔 ?꾪꽣留?
             const futureData = data.filter(p => {
                 const pDate = new Date(p.matchKey);
                 pDate.setHours(0, 0, 0, 0);
@@ -2091,7 +2091,7 @@
             const uniqueDates = [...new Set(futureData.map(p => p.matchKey))].sort((a, b) => new Date(a) - new Date(b));
             const filterArea = document.getElementById('date-filters');
 
-            // 현재 활성화된 날짜 기억
+            // ?꾩옱 ?쒖꽦?붾맂 ?좎쭨 湲곗뼲
             const activeBtn = filterArea.querySelector('.date-btn.active');
             const activeDate = activeBtn ? activeBtn.dataset.date : (uniqueDates.length > 0 ? uniqueDates[0] : null);
 
@@ -2112,7 +2112,7 @@
             if (activeDate && uniqueDates.includes(activeDate)) renderList(activeDate);
             else if (uniqueDates.length > 0) renderList(uniqueDates[0]);
             else {
-                document.getElementById('product-list').innerHTML = '<div style="text-align:center; padding:50px 0; color:#999;">현재 주문 가능한 상품이 없습니다.</div>';
+                document.getElementById('product-list').innerHTML = '<div style="text-align:center; padding:50px 0; color:#999;">?꾩옱 二쇰Ц 媛?ν븳 ?곹뭹???놁뒿?덈떎.</div>';
             }
         }
 
@@ -2130,16 +2130,16 @@
                 const currentQty = cart[p.name] || 0;
                 const stock = p.stock !== undefined && p.stock !== "" ? parseInt(p.stock) : Infinity;
                 const isSoldOut = stock <= 0;
-                const stockText = isFinite(stock) ? (isSoldOut ? "품절" : `주문가능수량 <span style="color:var(--nego-orange);">${stock}</span>개`) : "";
+                const stockText = isFinite(stock) ? (isSoldOut ? "?덉젅" : `二쇰Ц媛?μ닔??<span style="color:var(--nego-orange);">${stock}</span>媛?) : "";
 
                 card.innerHTML = `<div class="card-top">` +
                     `<div class="thumb">${imgId ? `<img src="${getImgUrl(imgId, 300)}" loading="lazy" style="width:100%; height:100%; object-fit:contain;">` : 'No Image'}</div>` +
                     `<div class="item-info-top">` +
                     `<div class="item-name" style="margin-bottom:2px;">${p.name}</div>` +
-                    `<div class="item-price-val">${parseInt(p.price || 0).toLocaleString()}원</div>` +
+                    `<div class="item-price-val">${parseInt(p.price || 0).toLocaleString()}??/div>` +
                     `</div></div>` +
                     `<div class="item-controls-bottom-v">` +
-                    `<button class="btn-detail" onclick="openDetail('${p.name.replace(/'/g, "\\'")}')">상세보기</button>` +
+                    `<button class="btn-detail" onclick="openDetail('${p.name.replace(/'/g, "\\'")}')">?곸꽭蹂닿린</button>` +
                     `<div class="qty-group">` +
                     `<div class="stock-status" style="color:${isSoldOut ? '#ff0000' : '#455464'};">${stockText}</div>` +
                     `<div class="qty-controls ${currentQty > 0 ? 'selected' : ''}" style="${isSoldOut ? 'opacity:0.5; pointer-events:none;' : ''}">` +
@@ -2158,35 +2158,35 @@
             let val = Math.max(0, (cart[name] || 0) + change);
 
             if (val > stock) {
-                showSystemModal(`해당 상품의 주문가능 수량은 ${isFinite(stock) ? stock + '개' : '없음'}입니다.`, 'alert');
+                showSystemModal(`?대떦 ?곹뭹??二쇰Ц媛???섎웾? ${isFinite(stock) ? stock + '媛? : '?놁쓬'}?낅땲??`, 'alert');
                 return;
             }
 
-            cart[name] = val; // 장바구니 상태 업데이트
-            if (val === 0) delete cart[name]; // 0개면 제거
+            cart[name] = val; // ?λ컮援щ땲 ?곹깭 ?낅뜲?댄듃
+            if (val === 0) delete cart[name]; // 0媛쒕㈃ ?쒓굅
 
             input.value = val;
 
-            // 수량에 따라 배경색(클래스) 토글
+            // ?섎웾???곕씪 諛곌꼍???대옒?? ?좉?
             const controls = btn.parentElement;
             if (val > 0) controls.classList.add('selected');
             else controls.classList.remove('selected');
 
             updateFooter();
 
-            // [추가] 푸터가 올라오면서 버튼을 가리는지 체크하여 자동 스크롤
+            // [異붽?] ?명꽣媛 ?щ씪?ㅻ㈃??踰꾪듉??媛由щ뒗吏 泥댄겕?섏뿬 ?먮룞 ?ㅽ겕濡?
             if (change > 0) {
                 setTimeout(() => {
                     const footer = document.getElementById('main-footer');
                     const footerRect = footer.getBoundingClientRect();
                     const controlsRect = controls.getBoundingClientRect();
 
-                    // 푸터가 활성화된 상태이고, 수량 조절 바가 푸터 영역에 닿거나 가려지면
+                    // ?명꽣媛 ?쒖꽦?붾맂 ?곹깭?닿퀬, ?섎웾 議곗젅 諛붽? ?명꽣 ?곸뿭???욧굅??媛?ㅼ?硫?
                     if (footer.classList.contains('visible') && controlsRect.bottom > footerRect.top - 10) {
-                        const scrollAmount = controlsRect.bottom - footerRect.top + 70; // 70px 정도 여유있게 올림
+                        const scrollAmount = controlsRect.bottom - footerRect.top + 70; // 70px ?뺣룄 ?ъ쑀?덇쾶 ?щ┝
                         window.scrollBy({ top: scrollAmount, behavior: 'smooth' });
                     }
-                }, 350); // 푸터 애니메이션 시간(0.4s)에 맞춰 약간 일찍 실행
+                }, 350); // ?명꽣 ?좊땲硫붿씠???쒓컙(0.4s)??留욎떠 ?쎄컙 ?쇱컢 ?ㅽ뻾
             }
         }
 
@@ -2194,7 +2194,7 @@
             let tQ = 0,
                 tP = 0;
 
-            // 장바구니(cart) 상태를 기준으로 합산
+            // ?λ컮援щ땲(cart) ?곹깭瑜?湲곗??쇰줈 ?⑹궛
             for (const name in cart) {
                 const q = cart[name];
                 const product = productsData.find(p => p.name === name);
@@ -2211,17 +2211,17 @@
                 footer.classList.remove('visible');
             }
 
-            document.getElementById('total-qty-text').innerHTML = `총 <span style="color:var(--nego-orange);">${tQ}</span>개 선택`;
-            document.getElementById('total-price-text').innerText = `${tP.toLocaleString()}원`;
+            document.getElementById('total-qty-text').innerHTML = `珥?<span style="color:var(--nego-orange);">${tQ}</span>媛??좏깮`;
+            document.getElementById('total-price-text').innerText = `${tP.toLocaleString()}??;
         }
 
         function openDetail(name) {
             const p = productsData.find(i => i.name === name);
             if (!p) return;
             document.getElementById('detail-title').innerText = p.name;
-            document.getElementById('detail-price').innerText = parseInt(p.price || 0).toLocaleString() + '원';
-            document.getElementById('detail-desc').style.whiteSpace = 'pre-wrap'; // 줄바꿈 유지
-            document.getElementById('detail-desc').innerText = p.desc || "상세 설명이 없습니다.";
+            document.getElementById('detail-price').innerText = parseInt(p.price || 0).toLocaleString() + '??;
+            document.getElementById('detail-desc').style.whiteSpace = 'pre-wrap'; // 以꾨컮轅??좎?
+            document.getElementById('detail-desc').innerText = p.desc || "?곸꽭 ?ㅻ챸???놁뒿?덈떎.";
             const slider = document.getElementById('slider-area');
 
             if (p.images && p.images.length > 0 && p.images[0]) {
@@ -2243,7 +2243,7 @@
             const slider = document.getElementById('slider-area');
             const index = Math.round(slider.scrollLeft / slider.clientWidth);
 
-            // 현재 상세페이지에 떠있는 상품 데이터 찾기
+            // ?꾩옱 ?곸꽭?섏씠吏???좎엳???곹뭹 ?곗씠??李얘린
             const name = document.getElementById('detail-title').innerText;
             const p = productsData.find(i => i.name === name);
             if (!p || !p.images || p.images.length === 0) return;
@@ -2251,7 +2251,7 @@
             const fsOverlay = document.getElementById('fullscreen-overlay');
             const fsSlider = document.getElementById('fullscreen-slider-area');
 
-            // 모든 이미지 렌더링
+            // 紐⑤뱺 ?대?吏 ?뚮뜑留?
             fsSlider.innerHTML = p.images.map(id => `
                 <div class="fullscreen-slide">
                     <img src="${getImgUrl(id)}">
@@ -2260,7 +2260,7 @@
 
             fsOverlay.style.display = 'flex';
             checkScrollLock();
-            // 현재 인덱스로 스크롤 이동
+            // ?꾩옱 ?몃뜳?ㅻ줈 ?ㅽ겕濡??대룞
             setTimeout(() => {
                 fsSlider.scrollLeft = index * fsSlider.clientWidth;
             }, 10);
@@ -2272,27 +2272,27 @@
         }
 
         function openConfirm() {
-            // [추가] 장바구니 비어있음 체크
+            // [異붽?] ?λ컮援щ땲 鍮꾩뼱?덉쓬 泥댄겕
             if (Object.keys(cart).length === 0) {
-                showSystemModal("상품이 없습니다. 상품을 선택해 주세요.", 'alert');
+                showSystemModal("?곹뭹???놁뒿?덈떎. ?곹뭹???좏깮??二쇱꽭??", 'alert');
                 return;
             }
 
-            const name = document.getElementById('input-name').value || "입력되지 않음";
-            const phone = document.getElementById('input-phone').value || "입력되지 않음";
+            const name = document.getElementById('input-name').value || "?낅젰?섏? ?딆쓬";
+            const phone = document.getElementById('input-phone').value || "?낅젰?섏? ?딆쓬";
 
             const list = document.getElementById('confirm-item-list');
             list.innerHTML = `
-                <div style="font-size:18px; font-weight:900; color:var(--item-black); margin-bottom:12px; text-align:center;">주문 내용을 확인해주세요</div>
+                <div style="font-size:18px; font-weight:900; color:var(--item-black); margin-bottom:12px; text-align:center;">二쇰Ц ?댁슜???뺤씤?댁＜?몄슂</div>
                 <div style="margin-bottom:15px; border-bottom:1px solid #ddd; padding-bottom:12px;">
-                    <div style="font-size:16px; font-weight:800; color:var(--item-black); margin-bottom:5px;">주문자 정보</div>
-                    <div style="font-size:15px; color:#000;">주문자명: <span style="font-weight:700; color:var(--nego-orange);">${name}</span></div>
-                    <div style="font-size:15px; color:#000;">연락처: <span style="font-weight:700; color:var(--nego-orange);">${phone}</span></div>
+                    <div style="font-size:16px; font-weight:800; color:var(--item-black); margin-bottom:5px;">二쇰Ц???뺣낫</div>
+                    <div style="font-size:15px; color:#000;">二쇰Ц?먮챸: <span style="font-weight:700; color:var(--nego-orange);">${name}</span></div>
+                    <div style="font-size:15px; color:#000;">?곕씫泥? <span style="font-weight:700; color:var(--nego-orange);">${phone}</span></div>
                 </div>
             `;
             let total = 0;
 
-            // 장바구니(cart) 상태를 기준으로 확인 창 표시
+            // ?λ컮援щ땲(cart) ?곹깭瑜?湲곗??쇰줈 ?뺤씤 李??쒖떆
             for (const name in cart) {
                 const q = cart[name];
                 const product = productsData.find(p => p.name === name);
@@ -2303,20 +2303,20 @@
                         <div style="display:flex; justify-content:space-between; align-items:center; font-size:15px; margin-bottom:8px;">
                             <span style="color:var(--item-black); font-weight:800; flex:1; padding-right:6px; word-break:keep-all; line-height:1.2;">${name}</span>
                             <div style="display:flex; align-items:center; min-width:90px; justify-content:flex-end; flex-shrink:0;">
-                                <span style="color:#455464; font-size:15px; font-weight:700; text-align:right;">${q}개</span>
+                                <span style="color:#455464; font-size:15px; font-weight:700; text-align:right;">${q}媛?/span>
                                 <span style="color:#ccc; font-size:0.75rem; margin:0 4px;">/</span>
-                                <span style="color:var(--item-black); font-weight:800; text-align:right;">${sub.toLocaleString()}원</span>
+                                <span style="color:var(--item-black); font-weight:800; text-align:right;">${sub.toLocaleString()}??/span>
                             </div>
                         </div>`;
                 }
             }
-            document.getElementById('confirm-total-price').innerText = total.toLocaleString() + '원';
+            document.getElementById('confirm-total-price').innerText = total.toLocaleString() + '??;
 
-            // [추가] 주문 버튼 상태 초기화 (이전 주문의 '처리 중...' 상태 제거)
+            // [異붽?] 二쇰Ц 踰꾪듉 ?곹깭 珥덇린??(?댁쟾 二쇰Ц??'泥섎━ 以?..' ?곹깭 ?쒓굅)
             const submitBtn = document.getElementById('btn-submit-order');
             if (submitBtn) {
                 submitBtn.disabled = false;
-                submitBtn.innerText = "주문확정";
+                submitBtn.innerText = "二쇰Ц?뺤젙";
                 submitBtn.style.opacity = "1";
             }
 
@@ -2325,35 +2325,35 @@
         }
 
         async function completeOrder() {
-            // [추가] 안내사항 확인 체크 여부 검사
+            // [異붽?] ?덈궡?ы빆 ?뺤씤 泥댄겕 ?щ? 寃??
             const noticeCheck = document.getElementById('confirm-notice-check');
             if (noticeCheck && !noticeCheck.checked) {
-                showSystemModal("안내 내용을 확인하고 동의해주세요.", 'alert');
+                showSystemModal("?덈궡 ?댁슜???뺤씤?섍퀬 ?숈쓽?댁＜?몄슂.", 'alert');
                 return;
             }
 
-            // [추가] 중복 처리 방지 (데이터 꼬임 방지)
+            // [異붽?] 以묐났 泥섎━ 諛⑹? (?곗씠??瑗ъ엫 諛⑹?)
             if (isHistoryProcessing) {
-                showSystemModal("이전 주문 확인 중입니다.\n잠시만 기다려 주세요.", 'alert');
+                showSystemModal("?댁쟾 二쇰Ц ?뺤씤 以묒엯?덈떎.\n?좎떆留?湲곕떎??二쇱꽭??", 'alert');
                 return;
             }
 
             const submitBtn = document.getElementById('btn-submit-order');
-            if (submitBtn.disabled) return; // 이미 처리 중이면 중단
+            if (submitBtn.disabled) return; // ?대? 泥섎━ 以묒씠硫?以묐떒
 
-            // 처리 시작 플래그 설정
+            // 泥섎━ ?쒖옉 ?뚮옒洹??ㅼ젙
             isHistoryProcessing = true;
 
-            // 버튼 즉시 비활성화 (중복 클릭 방지)
+            // 踰꾪듉 利됱떆 鍮꾪솢?깊솕 (以묐났 ?대┃ 諛⑹?)
             submitBtn.disabled = true;
-            submitBtn.innerText = "처리 중...";
+            submitBtn.innerText = "泥섎━ 以?..";
             submitBtn.style.opacity = "0.7";
 
             const name = document.getElementById('input-name').value;
             const phone = document.getElementById('input-phone').value;
             const allItems = [];
 
-            // 장바구니(cart) 상태를 기준으로 주문 데이터 생성
+            // ?λ컮援щ땲(cart) ?곹깭瑜?湲곗??쇰줈 二쇰Ц ?곗씠???앹꽦
             for (const itemName in cart) {
                 const q = cart[itemName];
                 const pData = productsData.find(p => p.name === itemName);
@@ -2369,31 +2369,31 @@
             }
 
             if (allItems.length === 0) {
-                showSystemModal("주문할 상품이 없습니다.", 'alert');
+                showSystemModal("二쇰Ц???곹뭹???놁뒿?덈떎.", 'alert');
                 submitBtn.disabled = false;
-                submitBtn.innerText = "주문확정";
+                submitBtn.innerText = "二쇰Ц?뺤젙";
                 submitBtn.style.opacity = "1";
                 return;
             }
 
             if (!name || !phone) {
-                showSystemModal("주문자명과 연락처를 입력해주세요.", 'alert', () => {
+                showSystemModal("二쇰Ц?먮챸怨??곕씫泥섎? ?낅젰?댁＜?몄슂.", 'alert', () => {
                     closeModal('confirm-overlay');
                     document.getElementById('profile-modal').style.display = 'flex';
                 });
                 submitBtn.disabled = false;
-                submitBtn.innerText = "주문확정";
+                submitBtn.innerText = "二쇰Ц?뺤젙";
                 submitBtn.style.opacity = "1";
                 return;
             }
 
-            // 모달 닫기
+            // 紐⑤떖 ?リ린
             closeModal('confirm-overlay');
             closeModal('detail-overlay');
 
             const tempTimestamp = new Date().toISOString();
 
-            // 픽업일(date)별로 아이템 그룹화
+            // ?쎌뾽??date)蹂꾨줈 ?꾩씠??洹몃９??
             const groups = allItems.reduce((acc, item) => {
                 const d = item.date || 'unknown';
                 if (!acc[d]) acc[d] = [];
@@ -2403,55 +2403,55 @@
 
             const dateKeys = Object.keys(groups);
 
-            // [Optimistic UI] 즉시 성공 처리
+            // [Optimistic UI] 利됱떆 ?깃났 泥섎━
             try {
-                // 장바구니 비우기 및 UI 갱신 (수량 선반영은 하지 않음)
+                // ?λ컮援щ땲 鍮꾩슦湲?諛?UI 媛깆떊 (?섎웾 ?좊컲?곸? ?섏? ?딆쓬)
                 cart = {};
                 updateFooter();
 
-                // [UI 갱신] 장바구니가 비워졌으므로 리스트도 다시 그려서 수량 0으로 초기화
+                // [UI 媛깆떊] ?λ컮援щ땲媛 鍮꾩썙議뚯쑝誘濡?由ъ뒪?몃룄 ?ㅼ떆 洹몃젮???섎웾 0?쇰줈 珥덇린??
                 const activeBtn = document.querySelector('.date-btn.active');
                 if (activeBtn) renderList(activeBtn.dataset.date);
 
-                // 1. 날짜 포맷팅 헬퍼 정의 (JS용)
+                // 1. ?좎쭨 ?щ㎎???ы띁 ?뺤쓽 (JS??
                 const jsFormatDate = (d) => {
                     const y = d.getFullYear();
                     const m = d.getMonth() + 1;
                     const day = d.getDate();
-                    const w = ['일', '월', '화', '수', '목', '금', '토'][d.getDay()];
+                    const w = ['??, '??, '??, '??, '紐?, '湲?, '??][d.getDay()];
                     const h = String(d.getHours()).padStart(2, '0');
                     const min = String(d.getMinutes()).padStart(2, '0');
                     const s = String(d.getSeconds()).padStart(2, '0');
-                    return `${y}년 ${m}월 ${day}일 (${w}) ${h}:${min}:${s}`;
+                    return `${y}??${m}??${day}??(${w}) ${h}:${min}:${s}`;
                 };
 
-                // [수정] 픽업일 포맷팅 헬퍼 ("2024-02-06" -> "2024년 2월 6일 (화)")
+                // [?섏젙] ?쎌뾽???щ㎎???ы띁 ("2024-02-06" -> "2024??2??6??(??")
                 const jsFormatPickup = (dateStr) => {
                     if (!dateStr) return "";
                     const d = new Date(dateStr);
                     const y = d.getFullYear();
                     const m = d.getMonth() + 1;
                     const day = d.getDate();
-                    const w = ['일', '월', '화', '수', '목', '금', '토'][d.getDay()];
-                    return `${y}년 ${m}월 ${day}일 (${w})`;
+                    const w = ['??, '??, '??, '??, '紐?, '湲?, '??][d.getDay()];
+                    return `${y}??${m}??${day}??(${w})`;
                 };
 
-                // 2. 새로운 히스토리 아이템 생성
+                // 2. ?덈줈???덉뒪?좊━ ?꾩씠???앹꽦
                 const newHistoryItems = allItems.map(it => ({
                     timestamp: jsFormatDate(new Date(tempTimestamp)),
                     item: it.name,
                     qty: it.qty,
                     price: it.price,
                     total: it.subtotal,
-                    pickupDate: jsFormatPickup(it.date), // 즉시 포맷팅 적용
+                    pickupDate: jsFormatPickup(it.date), // 利됱떆 ?щ㎎???곸슜
                     received: false,
                     name: name,
                     rawTimestamp: tempTimestamp,
-                    matchKey: it.date // matchKey 추가 (동일 상품 구분용)
+                    matchKey: it.date // matchKey 異붽? (?숈씪 ?곹뭹 援щ텇??
                 }));
 
-                // 3. 전역 변수에 추가 (맨 앞에)
-                // [수정] 기존 데이터가 없으면 캐시에서 먼저 로드 (덮어쓰기 방지)
+                // 3. ?꾩뿭 蹂?섏뿉 異붽? (留??욎뿉)
+                // [?섏젙] 湲곗〈 ?곗씠?곌? ?놁쑝硫?罹먯떆?먯꽌 癒쇱? 濡쒕뱶 (??뼱?곌린 諛⑹?)
                 const cacheKey_hist = `history_cache_${name}_${phone}`;
                 if (!fullHistoryData || fullHistoryData.length === 0) {
                     const cached = localStorage.getItem(cacheKey_hist);
@@ -2460,20 +2460,20 @@
 
                 if (typeof fullHistoryData !== 'undefined' && Array.isArray(fullHistoryData)) {
                     fullHistoryData = [...newHistoryItems, ...fullHistoryData];
-                    // [최적화] 로컬 스토리지 즉시 갱신 (역사 창 열 때 서버 대기 없이 바로 뜨게 함)
+                    // [理쒖쟻?? 濡쒖뺄 ?ㅽ넗由ъ? 利됱떆 媛깆떊 (??궗 李??????쒕쾭 ?湲??놁씠 諛붾줈 ?④쾶 ??
                     localStorage.setItem(cacheKey_hist, JSON.stringify(fullHistoryData));
                 }
 
-                // 성공 메시지 (기존 Optimistic UI용 모달 제거 또는 변경)
-                // 대신 '주문 확인 중' 모달을 띄우고 서버 응답 후 완료 모달로 전환
-                showSystemModal("주문 확인 중입니다.\n잠시만 기다려 주세요...", 'loading');
+                // ?깃났 硫붿떆吏 (湲곗〈 Optimistic UI??紐⑤떖 ?쒓굅 ?먮뒗 蹂寃?
+                // ???'二쇰Ц ?뺤씤 以? 紐⑤떖???꾩슦怨??쒕쾭 ?묐떟 ???꾨즺 紐⑤떖濡??꾪솚
+                showSystemModal("二쇰Ц ?뺤씤 以묒엯?덈떎.\n?좎떆留?湲곕떎??二쇱꽭??..", 'loading');
 
-                // 2. 백그라운드 전송 -> 이제 응답을 기다림 (await)
-                // [수정] 원본 카카오 프로필 정보 항상 포함 (사용자 수동 변경과 관계없이 기록용)
+                // 2. 諛깃렇?쇱슫???꾩넚 -> ?댁젣 ?묐떟??湲곕떎由?(await)
+                // [?섏젙] ?먮낯 移댁뭅???꾨줈???뺣낫 ??긽 ?ы븿 (?ъ슜???섎룞 蹂寃쎄낵 愿怨꾩뾾??湲곕줉??
                 const kakaoName = localStorage.getItem('kakao_original_name') || "";
                 const kakaoPhone = localStorage.getItem('kakao_original_phone') || "";
 
-                // 2. 서버 전송 데이터 구성
+                // 2. ?쒕쾭 ?꾩넚 ?곗씠??援ъ꽦
                 const payload = {
                     header: 'order',
                     name: name,
@@ -2481,30 +2481,30 @@
                     kakaoName: kakaoName,
                     kakaoPhone: kakaoPhone,
                     items: allItems,
-                    timestamp: tempTimestamp // 동일 타임스탬프 사용 (삭제 시 매칭용)
+                    timestamp: tempTimestamp // ?숈씪 ??꾩뒪?ы봽 ?ъ슜 (??젣 ??留ㅼ묶??
                 };
 
-                // 비동기 실행 (결과를 기다려야 하므로 await 사용 또는 then 체이닝 유지)
+                // 鍮꾨룞湲??ㅽ뻾 (寃곌낵瑜?湲곕떎?ㅼ빞 ?섎?濡?await ?ъ슜 ?먮뒗 then 泥댁씠???좎?)
                 fetch(API_URL, {
                     method: 'POST',
                     redirect: 'follow',
                     body: JSON.stringify(payload)
                 }).then(res => {
-                    if (!res.ok) throw new Error("전송 실패");
+                    if (!res.ok) throw new Error("?꾩넚 ?ㅽ뙣");
                     return res.json();
                 }).then(result => {
-                    isHistoryProcessing = false; // [추가] 처리 완료
+                    isHistoryProcessing = false; // [異붽?] 泥섎━ ?꾨즺
                     if (result.result === 'success') {
-                        console.log("주문 백그라운드 처리 완료");
-                        // 로딩 모달을 닫고 완료 모달 표시
+                        console.log("二쇰Ц 諛깃렇?쇱슫??泥섎━ ?꾨즺");
+                        // 濡쒕뵫 紐⑤떖???リ퀬 ?꾨즺 紐⑤떖 ?쒖떆
                         document.getElementById('system-modal').style.display = 'none';
 
-                        // [재고 즉시 반영] 서버 성공 시 로컬 데이터를 즉시 갱신하여 체감 속도 향상
+                        // [?ш퀬 利됱떆 諛섏쁺] ?쒕쾭 ?깃났 ??濡쒖뺄 ?곗씠?곕? 利됱떆 媛깆떊?섏뿬 泥닿컧 ?띾룄 ?μ긽
                         allItems.forEach(it => {
                             const p = productsData.find(pd => pd.matchKey === it.date && pd.name === it.name);
                             if (p) {
                                 p.stock = parseInt(p.stock || 0) - (parseInt(it.qty) || 0);
-                                // [상태 잠금] 15초 동안 이 수량을 보호 (loadData가 덮어쓰지 못하도록)
+                                // [?곹깭 ?좉툑] 15珥??숈븞 ???섎웾??蹂댄샇 (loadData媛 ??뼱?곗? 紐삵븯?꾨줉)
                                 const itemKey = (it.date || "") + "|" + it.name;
                                 pendingStockUpdates[itemKey] = {
                                     stock: p.stock,
@@ -2513,33 +2513,33 @@
                             }
                         });
 
-                        // [UI 갱신] 변경된 재고 데이터로 리스트 즉시 다시 그리기
+                        // [UI 媛깆떊] 蹂寃쎈맂 ?ш퀬 ?곗씠?곕줈 由ъ뒪??利됱떆 ?ㅼ떆 洹몃━湲?
                         const activeBtn = document.querySelector('.date-btn.active');
                         if (activeBtn) renderList(activeBtn.dataset.date);
 
-                        showSystemModal("주문이 완료되었습니다!", 'alert');
+                        showSystemModal("二쇰Ц???꾨즺?섏뿀?듬땲??", 'alert');
                         setTimeout(() => closeModal('system-modal'), 1500);
 
-                        // 확실한 데이터 동기화를 위해 조용히 새로고침
+                        // ?뺤떎???곗씠???숆린?붾? ?꾪빐 議곗슜???덈줈怨좎묠
                         setTimeout(() => loadData(), 2000);
                     } else {
-                        // [에러 핸들링] 서버에서 재고 부족 등으로 거절한 경우
-                        throw new Error(result.message || "주문 처리 실패");
+                        // [?먮윭 ?몃뱾留? ?쒕쾭?먯꽌 ?ш퀬 遺議??깆쑝濡?嫄곗젅??寃쎌슦
+                        throw new Error(result.message || "二쇰Ц 泥섎━ ?ㅽ뙣");
                     }
                 }).catch(err => {
-                    console.error("주문 백그라운드 실패:", err);
-                    isHistoryProcessing = false; // [추가] 에러 발생 시 처리 완료로 변경
+                    console.error("二쇰Ц 諛깃렇?쇱슫???ㅽ뙣:", err);
+                    isHistoryProcessing = false; // [異붽?] ?먮윭 諛쒖깮 ??泥섎━ ?꾨즺濡?蹂寃?
                     document.getElementById('system-modal').style.display = 'none';
 
-                    // [재고 동기화] 실패 시 최신 재고 상태를 다시 불러옴
+                    // [?ш퀬 ?숆린?? ?ㅽ뙣 ??理쒖떊 ?ш퀬 ?곹깭瑜??ㅼ떆 遺덈윭??
                     loadData();
 
-                    showSystemModal("⚠️ 주문이 실패했습니다! ⚠️\n" + err.message, 'alert');
+                    showSystemModal("?좑툘 二쇰Ц???ㅽ뙣?덉뒿?덈떎! ?좑툘\n" + err.message, 'alert');
 
-                    // 실패 시 버튼 재활성화
+                    // ?ㅽ뙣 ??踰꾪듉 ?ы솢?깊솕
                     if (submitBtn) {
                         submitBtn.disabled = false;
-                        submitBtn.innerText = "주문확정 (재시도)";
+                        submitBtn.innerText = "二쇰Ц?뺤젙 (?ъ떆??";
                         submitBtn.style.opacity = "1";
                     }
                 });
@@ -2547,47 +2547,47 @@
             } catch (err) {
                 console.error(err);
                 document.getElementById('system-modal').style.display = 'none';
-                alert("주문 처리 중 오류가 발생했습니다.\n내용: " + err.message);
+                alert("二쇰Ц 泥섎━ 以??ㅻ쪟媛 諛쒖깮?덉뒿?덈떎.\n?댁슜: " + err.message);
                 if (submitBtn) {
                     submitBtn.disabled = false;
-                    submitBtn.innerText = "주문확정 (재시도)";
+                    submitBtn.innerText = "二쇰Ц?뺤젙 (?ъ떆??";
                 }
             }
         }
 
 
-        // window.onload 대신 DOMContentLoaded 사용 (훨씬 빠름)
+        // window.onload ???DOMContentLoaded ?ъ슜 (?⑥뵮 鍮좊쫫)
         document.addEventListener('DOMContentLoaded', () => {
-            // [마이그레이션] 구버전 카카오 키 이동
+            // [留덉씠洹몃젅?댁뀡] 援щ쾭??移댁뭅?????대룞
             const oldNick = localStorage.getItem('kakao_nickname');
             if (oldNick && !localStorage.getItem('kakao_original_name')) {
                 localStorage.setItem('kakao_original_name', oldNick);
             }
 
-            // 주문내역은 배경에서 삭제 (UI 안막음)
-            setTimeout(() => localStorage.removeItem('moket_order_history'), 100);
+            // 二쇰Ц?댁뿭? 諛곌꼍?먯꽌 ??젣 (UI ?덈쭑??
+            setTimeout(() => localStorage.removeItem('gonggu_order_history'), 100);
 
-            // 데이터 로드와 프로필 로드를 병렬로 시작
+            // ?곗씠??濡쒕뱶? ?꾨줈??濡쒕뱶瑜?蹂묐젹濡??쒖옉
             loadData();
             loadProfile();
 
-            // 사용자 정보 없으면 카카오 로그인 유도 (사용자 경험 저해하지 않게 약간의 지연)
-            const name = localStorage.getItem('moket_user_name');
+            // ?ъ슜???뺣낫 ?놁쑝硫?移댁뭅??濡쒓렇???좊룄 (?ъ슜??寃쏀뿕 ??댄븯吏 ?딄쾶 ?쎄컙??吏??
+            const name = localStorage.getItem('gonggu_user_name');
             if (!name || !name.trim()) {
                 setTimeout(() => {
                     const modal = document.getElementById('profile-modal');
-                    // modal.classList.add('login-forced'); // [제거] 강제 로그인 스타일 제거
-                    document.getElementById('profile-modal-title').innerText = "주문자 정보 입력"; // [수정] 타이틀 변경
+                    // modal.classList.add('login-forced'); // [?쒓굅] 媛뺤젣 濡쒓렇???ㅽ????쒓굅
+                    document.getElementById('profile-modal-title').innerText = "二쇰Ц???뺣낫 ?낅젰"; // [?섏젙] ??댄? 蹂寃?
                     modal.style.display = 'flex';
                     checkScrollLock();
                 }, 400);
             } else {
-                // 사용자 정보가 있으면 미픽업 주문 확인 자동 실행
+                // ?ъ슜???뺣낫媛 ?덉쑝硫?誘명뵿??二쇰Ц ?뺤씤 ?먮룞 ?ㅽ뻾
                 setTimeout(checkUnpickedOrders, 1000);
             }
         });
 
-        // [속도 개선] 사용자가 앱에 다시 들어오거나 다른 탭에서 돌아오면 자동으로 최신 데이터 갱신
+        // [?띾룄 媛쒖꽑] ?ъ슜?먭? ?깆뿉 ?ㅼ떆 ?ㅼ뼱?ㅺ굅???ㅻⅨ ??뿉???뚯븘?ㅻ㈃ ?먮룞?쇰줈 理쒖떊 ?곗씠??媛깆떊
         document.addEventListener('visibilitychange', () => {
             if (document.visibilityState === 'visible') {
                 console.log("Tab focused (visibility), refreshing data...");
@@ -2595,22 +2595,22 @@
             }
         });
 
-        // [추가] 브라우저의 '뒤로가기/앞으로가기' 캐시(bfcache)에서 복구될 때 대응
+        // [異붽?] 釉뚮씪?곗???'?ㅻ줈媛湲??욎쑝濡쒓?湲? 罹먯떆(bfcache)?먯꽌 蹂듦뎄???????
         window.addEventListener('pageshow', (event) => {
-            // event.persisted가 true면 캐시된 페이지가 다시 활성화된 것
+            // event.persisted媛 true硫?罹먯떆???섏씠吏媛 ?ㅼ떆 ?쒖꽦?붾맂 寃?
             if (event.persisted) {
                 console.log("Page restored from bfcache, refreshing data...");
                 loadData(true);
             }
         });
 
-        // [추가] 포커스를 얻었을 때도 갱신 (일부 모바일 환경 대응)
+        // [異붽?] ?ъ빱?ㅻ? ?살뿀???뚮룄 媛깆떊 (?쇰? 紐⑤컮???섍꼍 ???
         window.addEventListener('focus', () => {
             console.log("Window focused, checking for updates...");
             loadData();
         });
 
-        // [수동 새로고침] 로고 클릭 또는 새로고침 버튼 클릭 시 실행
+        // [?섎룞 ?덈줈怨좎묠] 濡쒓퀬 ?대┃ ?먮뒗 ?덈줈怨좎묠 踰꾪듉 ?대┃ ???ㅽ뻾
         function forceRefresh() {
             console.log("Manual refresh triggered...");
             loadData(true);
@@ -2620,4 +2620,3 @@
 </body>
 
 </html>
-
