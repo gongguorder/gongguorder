@@ -31,6 +31,7 @@
     <link rel="preconnect" href="https://drive.google.com">
     <link rel="stylesheet" as="style" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/1.43.0/kakao.min.js"></script>
     <style>
         /* [1] 원본 주문서2.html 스타일 변수 및 레이아웃 완벽 보존 */
         :root {
@@ -882,6 +883,9 @@
             <div class="menu-icons"><span></span><span></span><span></span></div>
             <span class="btn-label">메뉴</span>
         </div>
+        <div class="header-center" onclick="refreshAllData()" style="cursor: pointer;">
+            <!-- Titles Removed -->
+        </div>
         <div class="cart-btn" onclick="openHistoryModal()">
             <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -896,6 +900,7 @@
     <div id="side-menu" class="side-menu">
         <div class="side-menu-header" style="text-align: center;">
             <div onclick="loadData(true); toggleMenu();" style="cursor: pointer;">
+                <!-- Titles Removed -->
             </div>
         </div>
         <p id="menu-greeting"><span class="name-badge">주문자</span>님 반갑습니다</p>
@@ -2689,5 +2694,3 @@
 </body>
 
 </html>
-
-
