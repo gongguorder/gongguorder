@@ -1290,82 +1290,11 @@
             if (phone) {
                 document.getElementById('input-phone').value = phone;
             }
-
-            // [추가] 카카오 인증 상태에 따른 버튼 처리 (UI는 숨김)
-            const certName = localStorage.getItem('kakao_original_name');
-            const promptDiv = document.getElementById('kakao-login-prompt');
-            const kakaoBtn = document.getElementById('btn-kakao-login');
-
-            if (certName) {
-                if (promptDiv) promptDiv.style.display = 'none';
-                if (kakaoBtn) kakaoBtn.style.display = 'none';
-            } else {
-                if (promptDiv) promptDiv.style.display = 'block';
-                if (kakaoBtn) kakaoBtn.style.display = 'flex';
-            }
         }
 
-        // [카카오 로그인]
+        // [카카오 로그인] - 제거됨
         function loginWithKakao() {
-            console.log('loginWithKakao() called');
-
-            // 1. 프로토콜 확인 (file:// 에서는 카카오 로그인이 작동하지 않음)
-            if (window.location.protocol === 'file:') {
-                showSystemModal("⚠️ 보안 경고 ⚠️\n\n카카오 로그인은 'file://' (컴퓨터에서 직접 열기) 환경에서 작동하지 않습니다.\n\nVS Code 'Live Server'로 실행하거나 웹 서버에 업로드 후 테스트해 주세요.", 'alert');
-                return;
-            }
-
-            if (typeof Kakao === 'undefined') {
-                showSystemModal("카카오 SDK 로드 실패. 인터넷 연결을 확인해 주세요.", 'alert');
-                return;
-            }
-
-            if (!Kakao.isInitialized()) {
-                console.warn('Kakao not initialized, retrying...');
-                try {
-                    Kakao.init('a968b0ece368c55cbffedea6e46ae16b');
-                } catch (e) { console.error(e); }
-            }
-
-            console.log('Requesting Kakao Auth login (v1)...');
-            Kakao.Auth.login({
-                success: function (authObj) {
-                    console.log('Kakao login success:', authObj);
-                    Kakao.API.request({
-                        url: '/v2/user/me',
-                        success: function (res) {
-                            console.log('User info retrieved:', res);
-                            const kakaoName = res.kakao_account?.profile?.nickname;
-                            const kakaoPhone = res.kakao_account?.phone_number; // 권한 있을 경우만 들어옴
-
-                            if (kakaoName) {
-                                // [수정] 원본 정보는 별도 키에 영구 보관 (사용자 수정 시에도 유지됨)
-                                localStorage.setItem('kakao_original_name', kakaoName);
-                                if (kakaoPhone) localStorage.setItem('kakao_original_phone', kakaoPhone);
-
-                                // 화면 표시용 (사용자가 수정 가능)
-                                localStorage.setItem('moket_user_name', kakaoName);
-                                loadProfile(); // UI 갱신 (인증됨 표시)
-
-                                const modal = document.getElementById('profile-modal');
-                                modal.classList.remove('login-forced');
-                                document.getElementById('profile-modal-title').innerText = "주문자 정보 입력";
-                                document.getElementById('btn-kakao-login').style.display = "none";
-
-                                showSystemModal(`${kakaoName}님, 반갑습니다!\n마지막으로 연락처를 입력하고 [저장하기]를 눌러주세요.`, 'alert');
-                            }
-                        },
-                        fail: function (error) {
-                            console.error('User info request failed:', error);
-                            showSystemModal("카카오 사용자 정보를 가져오는데 실패했습니다.", 'alert');
-                        }
-                    });
-                },
-                fail: function (err) {
-                    console.error('Kakao login failed:', err);
-                    showSystemModal("카카오 로그인 창을 띄우지 못했거나 사용자가 취소했습니다.", 'alert');
-                }
-            });
+            showSystemModal("카카오 로그인 기능은 지원하지 않습니다.", 'alert');
         }
 
         // [주문내역] 저장 및 조회
