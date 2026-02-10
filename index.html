@@ -10,7 +10,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
 
-    <title>MOKET 모켓 - 모두를 위한 공동구매 마켓</title>
+    <title>gongguordertest</title>
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%234CAF20'/><text x='50' y='72' font-family='Pretendard, sans-serif' font-size='70' font-weight='900' fill='white' text-anchor='middle'>M</text></svg>">
 
@@ -918,9 +918,7 @@
                     style="margin: 0; font-weight: 800; color: var(--white); font-size: 20px; letter-spacing: 1px;">
                     주문자 정보</h3>
             </div>
-            <div class="login-msg" id="kakao-login-prompt">
-                모켓에 오신 고객님 반갑습니다!<br>서비스를 이용하시려면 <b>카카오 로그인</b>이 필요합니다.
-            </div>
+            <!-- Kakao prompt removed -->
             <div class="input-group"><strong>주문자명</strong><input id="input-name" type="text" class="modal-input"
                     placeholder="주문자명 입력">
                 <div class="input-hint">오픈채팅방 닉네임과 동일하게 설정 해 주세요.</div>
@@ -2578,8 +2576,8 @@
             if (!name || !name.trim()) {
                 setTimeout(() => {
                     const modal = document.getElementById('profile-modal');
-                    modal.classList.add('login-forced');
-                    document.getElementById('profile-modal-title').innerText = "카카오 로그인";
+                    // modal.classList.add('login-forced'); // [제거] 강제 로그인 스타일 제거
+                    document.getElementById('profile-modal-title').innerText = "주문자 정보 입력"; // [수정] 타이틀 변경
                     modal.style.display = 'flex';
                     checkScrollLock();
                 }, 400);
